@@ -200,7 +200,7 @@ function Menu.hasBeenOpened()
 	if mainMenu > 7 then
 		return true
 	end
-	if (Menu.isOpened() or Menu.onPokemonSelect()) and Utils.match(mainMenu, {0, 2, 4, 6, 7}) then
+	if (Menu.isOpened() or Menu.onPokemonSelect()) and Utils.match(mainMenu, {0, 1, 2, 4, 6, 7}) then
 		return true
 	end
 end

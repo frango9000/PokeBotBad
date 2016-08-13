@@ -3,19 +3,22 @@
 RESET_FOR_TIME = false -- Set to true if you're trying to break the record, not just finish a run
 BEAST_MODE = false -- WARNING: Do not engage. Will yolo everything, and reset at every opportunity in the quest for 1:47.
 
-INITIAL_SPEED = 750
-AFTER_BROCK_SPEED = 350
+INITIAL_SPEED = 5000
+AFTER_MOON_SPEED = 500
+AFTER_BROCK_SPEED = 4000
 
-RUNS_FILE = "C:/Users/rjrhy/Desktop/Pokebot/Github work/PokeBotBad/wiki/red/runs.txt" -- Use / insted of \ otherwise it will not work
-
+RUNS_FILE = "C:/Users/Drew/Desktop/SpeedBot/PokeBotBad-master/wiki/red/runs.txt" -- Use / insted of \ otherwise it will not work
+BrockSeeds = "C:/Users/Drew/Desktop/SpeedBot/PokeBotBad-master/wiki/red/brockseeds.txt"
+DVFile = "C:/Users/Drew/Desktop/SpeedBot/PokeBotBad-master/wiki/red/DVs.txt"
 local SeedList = require "util.seedlist"
-local CUSTOM_SEED  = true -- Set in util/seedlist
-local NIDORAN_NAME = "A" -- Set this to the single character to name Nidoran (note, to replay a seed, it MUST match!)
+CUSTOM_SEED = true -- Set in util/seedlist
+local NIDORAN_NAME = "" -- Set this to the single character to name Nidoran (note, to replay a seed, it MUST match!)
 local PAINT_ON     = true -- Display contextual information while the bot runs
 
 -- START CODE (hard hats on)
 
 VERSION = "2.4.8"
+CURRENT_SPEED = nil
 
 local Data = require "data.data"
 
@@ -55,7 +58,11 @@ function resetAll()
 	Utils.reset()
 	oldSeconds = 0
 	running = false
+	CURRENT_SPEED = INITIAL_SPEED
 	client.speedmode(INITIAL_SPEED)
+	f, err = io.open(DVFile, "w+")
+	f:close()
+
 
 	if CUSTOM_SEED then
         Data.run.seed = SeedList.GetNextSeed()
@@ -69,7 +76,6 @@ function resetAll()
     end
 	math.randomseed(Data.run.seed)
 end
-
 
 
 -- EXECUTE

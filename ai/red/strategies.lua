@@ -560,6 +560,15 @@ end
 strategyFunctions.splitBrock = function()
 	Strategies.setYolo("brock")
 	strategyFunctions.split()
+	local newmessage = (Data.run.seed..", ")
+	f, err = io.open(BrockSeeds, "a")
+	f:write(newmessage.."\n")
+	f:close()
+	local attDV, defDV, spdDV, sclDV = Pokemon.getDVs("nidoran")
+	local DVWrite = (attDV.." "..defDV.." "..spdDV.." "..sclDV)
+	f, err = io.open(DVFile, "a")
+	f:write(DVWrite.."\n")
+	f:close()
 	return true
 end
 
