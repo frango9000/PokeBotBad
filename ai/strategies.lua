@@ -1078,12 +1078,8 @@ Strategies.functions = {
 	end,
 
 	speedchange = function(data)
-		if data.speed~=CURRENT_SPEED then
- 		client.speedmode(data.speed)		 
-			p(data.extra..", speed changed to "..data.speed.."%")
- 			client.speedmode(data.speed)
- 			CURRENT_SPEED = data.speed
- 		end
+		p(data.extra..", speed changed to "..data.speed.."%")
+ 		client.speedmode(data.speed)
 		return true
 	end,
 
@@ -2260,10 +2256,8 @@ Strategies.functions = {
 					end
 				end
 				Bridge.guessResults("elite4", "victory")
-			elseif status.frames == 500 then
-				Bridge.chat("beat the game in "..status.finishTime.."!")
 			elseif status.frames > 1800 then
-				return Strategies.hardReset("won", "Finished the game in "..Utils.elapsedTime()..", Dont forget to follow the stream!")
+				return Strategies.hardReset("won", "Finished the game in "..status.finishTime)
 			end
 			status.frames = status.frames + 1
 		elseif Memory.value("menu", "shop_current") == 252 then
