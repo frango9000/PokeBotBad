@@ -18,7 +18,6 @@ local PAINT_ON     = true -- Display contextual information while the bot runs
 -- START CODE (hard hats on)
 
 VERSION = "2.4.8"
-CURRENT_SPEED = nil
 
 local Data = require "data.data"
 
@@ -58,6 +57,7 @@ function resetAll()
 	Utils.reset()
 	oldSeconds = 0
 	running = false
+	client.speedmode(INITIAL_SPEED)
 	CURRENT_SPEED = INITIAL_SPEED
 	client.speedmode(INITIAL_SPEED)
 	f, err = io.open(DVFile, "w+")
