@@ -8,9 +8,6 @@ AFTER_BROCK_SPEED = 1500
 AFTER_MOON_SPEED = 500
 E4_SPEED = 200
 
-RESET_LOG = "./wiki/red/resets.txt"
-VICTORY_LOG = "./wiki/red/victories.txt"
-
 local CUSTOM_SEED  = nil -- Set to a known seed to replay it, or leave nil for random runs
 local NIDORAN_NAME = "A" -- Set this to the single character to name Nidoran (note, to replay a seed, it MUST match!)
 local PAINT_ON     = true -- Display contextual information while the bot runs
@@ -23,6 +20,9 @@ CURRENT_SPEED = nil
 local Data = require "data.data"
 
 Data.init()
+
+RESET_LOG = "./logs/"..Data.gameName.."/resets.txt"
+VICTORY_LOG = "./logs/"..Data.gameName.."/victories.txt"
 
 local Battle = require "action.battle"
 local Textbox = require "action.textbox"
@@ -58,7 +58,7 @@ function resetAll()
 	Utils.reset()
 	oldSeconds = 0
 	running = false
-	
+
 	CURRENT_SPEED = INITIAL_SPEED
   	client.speedmode(INITIAL_SPEED)
 
