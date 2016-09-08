@@ -42,6 +42,12 @@ function Data.init()
 	Data.yellow = yellowVersion
 	Data.gameName = gameName
 	Data.versionNumber = version
+
+	if Data.yellow then
+		order = { "eevee", "nidoran", "brock", "route3", "mt_moon", "mankey", "misty", "trash", "fly", "flute", "silph", "erika", "koga", "sabrina", "blaine", "victory_road", "lorelei", "bruno", "agatha", "lance", "blue", "champion" }
+	else
+		order = { "bulbasaur", "nidoran", "brock", "route3", "mt_moon", "mankey", "misty", "trash", "safari_carbos", "safari_carbos", "safari_carbos", "victory_road", "victory_road", "victory_road", "victory_road", "victory_road", "e4center", "blue", "blue", "blue", "champion", "champion" }
+	end
 end
 
 -- PRIVATE

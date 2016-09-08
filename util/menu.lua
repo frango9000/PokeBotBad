@@ -204,7 +204,7 @@ end
 -- Side node: "game.textbox" isn't used because it's 0 during a few frames when returning from the Pokémon selection screen after using an item on them.
 function Menu.isOpened()
 	-- TODO: Check Pokémon Yellow (0x1ffb == 160 is probably ok).
-	return memory.readbyte(0x1ffb) == 160 and (memory.readbyte(0x1ffd) == 153 or memory.readbyte(0x1ffd) == 110)
+	return memory.readbyte(0x1ffb) == 160 and (memory.readbyte(0x1ffd) == 153 or memory.readbyte(0x1ffd) == 110 or memory.readbyte(0x1ffd) == 225 or memory.readbyte(0x1ffd) == 175)
 end
 
 function Menu.close()

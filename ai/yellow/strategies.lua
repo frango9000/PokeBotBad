@@ -53,16 +53,24 @@ end
 
 Strategies.timeRequirements = {
 
+	eevee = function() --RESET
+		return 2
+	end,
+
 	nidoran = function()
 		return 7.5 + timeForFlier()
 	end,
 
 	forest = function() --YOLO
-		return 13 + timeForFlier() + timeForStats(true)
+		return 13 + timeForFlier() -- + timeForStats(true)
 	end,
 
 	brock = function()
-		return 15 + timeForFlier() + timeForStats(true)
+		return 15 + timeForFlier() -- + timeForStats(true)
+	end,
+
+	route3 = function()
+		return 19 + timeForFlier() + timeForStats(true)
 	end,
 
 	mt_moon = function()
@@ -76,6 +84,10 @@ Strategies.timeRequirements = {
 		return timeLimit
 	end,
 
+	mankey = function()
+		return 31.25 + timeForStats()
+	end,
+
 	misty = function() --TWEET
 		return 41 + timeForStats()
 	end,
@@ -84,8 +96,36 @@ Strategies.timeRequirements = {
 		return 49.75 + timeForStats()
 	end,
 
+	fly = function() -- safari_carbos #1
+		return 52.75 + timeForStats()
+	end,
+
+	flute = function() -- safari_carbos #2
+		return 63.25 + timeForStats()
+	end,
+
+	silph = function() -- safari_carbos #3 (68.25)
+		return 71 + timeForStats()
+	end,
+
+	erika = function()
+		return 77
+	end,
+
+	koga = function()
+		return 80
+	end,
+
+	sabrina = function()
+		return 82
+	end,
+
 	mom = function() --YOLO
 		return 90
+	end,
+
+	blaine = function()
+		return 88
 	end,
 
 	victory_road = function() --TWEET
@@ -94,6 +134,22 @@ Strategies.timeRequirements = {
 			timeLimit = timeLimit - 0.1
 		end
 		return timeLimit
+	end,
+
+	lorelei = function() --TWEET
+		return 104
+	end,
+
+	bruno = function()
+		return 106
+	end,
+
+	agatha = function()
+		return 108
+	end,
+
+	lance = function()
+		return 110
 	end,
 
 	blue = function() --YOLO

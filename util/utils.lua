@@ -199,7 +199,6 @@ function Utils.timeToSplit(splitName)
 end
 
 function Utils.splitCheck()
-	local order = { "bulbasaur", "nidoran", "brock", "route3", "mt_moon", "mankey", "misty", "trash", "safari_carbos", "safari_carbos" , "safari_carbos", "victory_road", "victory_road", "victory_road", "victory_road", "victory_road", "e4center", "blue", "blue", "blue", "champion", "champion" }
 	if splitCheck == 600 then
 		local timediff = Utils.timeToSplit(order[splitNum])
 		if timediff >= 600 then

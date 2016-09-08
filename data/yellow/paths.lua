@@ -7,7 +7,7 @@ local YellowPaths = {
 	-- Into the Wild
 	{0, {5,6}, {10,6}, {10,0}},
 	-- Choose your character!
-	{40, {5,3}, {c="a",a="Pallet Rival"}, {c="allowDeath",on=true}, {5,4}, {7,4}, {s="take",dir="Up"}, {5,3}, {s="dialogue",dir="Up",decline=true}, {s="acquire",poke="pikachu"}, {5,6}, {s="fightEevee"}, {5,12}},
+	{40, {5,3}, {c="a",a="Pallet Rival"}, {c="allowDeath",on=true}, {5,4}, {7,4}, {s="take",dir="Up"}, {5,3}, {s="dialogue",dir="Up",decline=true}, {s="acquire",poke="pikachu"}, {5,6}, {s="fightEevee"}, {s="split"}, {5,12}},
 	-- Let's try this escape again
 	{0, {12,12}, {c="a",a="Pallet Town"}, {c="allowDeath",on=false}, {c="encounters",limit=5}, {c="trackEncounters",area="route1"}, {9,12}, {9,2}, {10,2}, {10,-1}},
 	-- First encounter
