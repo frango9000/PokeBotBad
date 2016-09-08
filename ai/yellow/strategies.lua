@@ -631,7 +631,7 @@ strategyFunctions.conserveHornAttacks = function()
 		if Control.yolo or stats.nidoran.speed == 15 then
 			potionsRequired = potionsRequired - 1
 		end
-		p(hornAttacks, ppRequired, potionCount, potionsRequired)
+		p("Horns: "..hornAttacks.."/"..ppRequired..", Potions: "..potionCount.."/"..potionsRequired)
 		if potionCount >= potionsRequired and hornAttacks >= ppRequired then
 			Bridge.chat("is risking some damage ranges to attempt to double Center skip...")
 			riskDamageRanges = true

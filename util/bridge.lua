@@ -45,11 +45,11 @@ function Bridge.init(gameName)
 		if client then
 			client:settimeout(0.005)
 			client:setoption("keepalive", true)
-			print("Connected to Java!");
+			print("Connected to liveSplit!");
 			send("init,"..gameName)
 			return true
 		else
-			print("Error connecting to Java!");
+			print("Error connecting to liveSplit!");
 		end
 	end
 end

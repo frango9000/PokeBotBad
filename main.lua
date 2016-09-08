@@ -68,7 +68,7 @@ function resetAll()
 		p("RUNNING WITH A FIXED SEED ("..NIDORAN_NAME.." "..Data.run.seed.."), every run will play out identically!", true)
 	else
 		Data.run.seed = os.time()
-		print("PokeBot v"..VERSION..": "..(BEAST_MODE and "BEAST MODE seed" or "Seed:").." "..Data.run.seed)
+		print("PokeBot "..Utils.capitalize(Data.gameName).."v"..VERSION..": "..(BEAST_MODE and "BEAST MODE seed" or "Seed:").." "..Data.run.seed)
 	end
 	math.randomseed(Data.run.seed)
 end
@@ -96,9 +96,6 @@ if hasAlreadyStartedPlaying and RESET_FOR_TIME then
 end
 
 if STREAMING_MODE then
-	if not CUSTOM_SEED or BEAST_MODE then
-		RESET_FOR_TIME = true
-	end
 	Bridge.init(Data.gameName)
 else
 	if PAINT_ON then

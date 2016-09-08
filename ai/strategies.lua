@@ -203,7 +203,7 @@ end
 function Strategies.tweetProgress(message, progress)
 	if progress then
 		Strategies.updates[progress] = true
-		message = message.." Pokemon "..Utils.capitalize(Data.gameName).." http://www.twitch.tv/thepokebot"
+		message = message.." Pokemon "..Utils.capitalize(Data.gameName).." bot."
 	end
 	-- Bridge.tweet(message)
 	return true
@@ -531,8 +531,9 @@ local function nidokingStats()
 	Combat.factorPP(false, false)
 	Combat.setDisableThrash(false)
 
-	p(attDV, defDV, spdDV, sclDV)
-	print(statDesc)
+	Bridge.chat("Stats: Att: "..att..", Def: "..def..", Spd: "..spd..", Spc: "..scl..".")
+	Bridge.chat("DVs: Att: "..attDV..", Def: "..defDV..", Spd: "..spdDV..", Spc: "..sclDV..".")
+
 	Bridge.stats(statDesc)
 end
 
@@ -1238,7 +1239,8 @@ Strategies.functions = {
 			specialDV = sclDV,
 		}
 		Bridge.stats(att.." "..def.." "..spd.." "..scl)
-		Bridge.chat("Stats: "..att.." attack, "..def.." defense, "..spd.." speed, "..scl.." special.")
+		Bridge.chat("Stats: Att: "..att..", Def: "..def..", Spd: "..spd..", Spc: "..scl..".")
+		Bridge.chat("DVs: Att: "..attDV..", Def: "..defDV..", Spd: "..spdDV..", Spc: "..sclDV..".")
 
 		local resetsForStats = att < 15 or spd < 14 or scl < 12
 		local restrictiveStats = not Data.yellow and RESET_FOR_TIME
@@ -2312,7 +2314,8 @@ function Strategies.init(midGame)
 	local nido = Pokemon.inParty("nidoran", "nidorino", "nidoking")
 	if nido then
 		local attDV, defDV, spdDV, sclDV = Pokemon.getDVs(nido)
-		p(attDV, defDV, spdDV, sclDV)
+		Bridge.chat("Stats: Att: "..att..", Def: "..def..", Spd: "..spd..", Spc: "..scl..".")
+		Bridge.chat("DVs: Att: "..attDV..", Def: "..defDV..", Spd: "..spdDV..", Spc: "..sclDV..".")
 		stats.nidoran = {
 			rating = 1,
 			attackDV = attDV,
@@ -2332,7 +2335,6 @@ function Strategies.init(midGame)
 			stats.nidoran.speed = 15
 			stats.nidoran.special = 13
 		end
-		p(stats.nidoran.attack, "x", stats.nidoran.speed, stats.nidoran.special)
 	end
 
 	Strategies.initGame(midGame)
