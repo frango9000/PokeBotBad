@@ -200,10 +200,14 @@ end
 
 function Utils.splitCheck()
 	if splitCheck == 600 then
-		local timediff = Utils.timeToSplit(order[splitNum])
-		if timediff >= 600 then
+		local timeDiff = Utils.timeToSplit(order[splitNum])
+		local timeDiffLimit = 3000 -- 5 minutes over fail-safe reboot
+		if RESET_FOR_TIME then
+			timeDiffLimit = 600 -- 1 minute over
+		end
+		if timeDiff >= timeDiffLimit then
 			p("~"..splitNum..". "..order[splitNum]..": "..Utils.elapsedTime().." | "..Data.run.seed)
-			p("Something has gone wrong, Restarting... /n")
+			p("Time limit exceeded, Restarting...")
 			Strategies.reboot()
 		end
 		splitCheck = 0
