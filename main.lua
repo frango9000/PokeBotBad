@@ -68,7 +68,7 @@ function resetAll()
 		p("RUNNING WITH A FIXED SEED ("..NIDORAN_NAME.." "..Data.run.seed.."), every run will play out identically!", true)
 	else
 		Data.run.seed = os.time()
-		print("PokeBot "..Utils.capitalize(Data.gameName).."v"..VERSION..": "..(BEAST_MODE and "BEAST MODE seed" or "Seed:").." "..Data.run.seed)
+		print("PokeBot "..Utils.capitalize(Data.gameName).." v"..VERSION..": "..(BEAST_MODE and "BEAST MODE seed" or "Seed:").." "..Data.run.seed)
 	end
 	math.randomseed(Data.run.seed)
 end
