@@ -203,7 +203,7 @@ function Utils.splitCheck()
 		local timeDiff = Utils.timeToSplit(order[splitNum])
 		local timeDiffLimit = 3000 -- 5 minutes over fail-safe reboot
 		if RESET_FOR_TIME then
-			timeDiffLimit = 600 -- 1 minute over
+			timeDiffLimit = 1200 -- 2 minute over
 		end
 		if timeDiff >= timeDiffLimit then
 			Strategies.reset("time", "TimeSplit limit reached")
