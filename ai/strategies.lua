@@ -108,16 +108,13 @@ function Strategies.reset(reason, explanation, extra, wait)
 	local time = Utils.elapsedTime()
 	local resetMessage = "Reset"
 	resetMessage = resetMessage.." at "..Control.areaName
+	local separator = " | "
+
 	if time then
-		resetMessage = resetMessage.." | "..time
+		local timeDrift = Utils.frameToTime(Utils.timeToSplit(order[splitNumber]))
+		resetMessage = resetMessage..separator..time..separator..timeDrift
 	end
-	local separator
-	if Strategies.deepRun and not Control.yolo then
-		separator = " BibleThump"
-	else
-		separator = " | "
-	end
-	resetMessage = resetMessage..separator.." "..explanation.."."
+	resetMessage = resetMessage..separator..explanation.."."
 
 	if Strategies.updates.victory and not Control.yolo then
 		Strategies.tweetProgress(Utils.capitalize(resetMessage))
@@ -713,10 +710,11 @@ Strategies.functions = {
 		if Strategies.replay or not INTERNAL then
 			splitNumber = splitNumber + 1
 
+			local timeDrift = Utils.frameToTime(Utils.timeToSplit(order[splitNumber]))
 			local timeDiff
 			splitTime, timeDiff = Utils.timeSince(splitTime)
 			if timeDiff then
-				print(splitNumber..". "..Control.areaName..": "..Utils.elapsedTime().." ("..timeDiff..")")
+				print(splitNumber..". "..Control.areaName..": "..Utils.elapsedTime().." ("..timeDiff..") | "..timeDrift)
 			end
 		end
 		return true

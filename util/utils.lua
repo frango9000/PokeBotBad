@@ -206,14 +206,26 @@ function Utils.splitCheck()
 			timeDiffLimit = 600 -- 1 minute over
 		end
 		if timeDiff >= timeDiffLimit then
-			p("~"..splitNum..". "..order[splitNum]..": "..Utils.elapsedTime().." | "..Data.run.seed)
-			p("Time limit exceeded, Restarting...")
-			Strategies.reboot()
+			Strategies.reset("time", "TimeSplit limit reached")
 		end
 		splitCheck = 0
 	else
 		splitCheck = splitCheck + 1
 	end
+end
+
+function Utils.frameToTime(frames)
+	local timeString
+	if frames < 0 then
+		frames = frames * -1
+		timeString ="-"
+	else
+		timeString ="+"
+	end
+	local secs = frames % 60
+	local mins = math.floor(frames / 60)
+	timeString = timeString..clockSegment(mins)..":"..clockSegment(secs)
+	return timeString
 end
 
 function Utils.init()
