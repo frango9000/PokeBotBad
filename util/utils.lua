@@ -201,12 +201,15 @@ end
 function Utils.splitCheck()
 	if splitCheck == 600 then
 		local timeDiff = Utils.timeToSplit(order[splitNum])
-		local timeDiffLimit = 3000 -- 5 minutes over fail-safe reboot
+	--	local timeDrift =  Utils.frameToTime(Utils.timeToSplit(order[splitNum])) --temp debugin
+		local timeDiffLimit = 900 -- 15 minutes fail-safe reboot
 		if RESET_FOR_TIME then
-			timeDiffLimit = 1200 -- 2 minute over
+			timeDiffLimit = 600 -- 10 minute
 		end
 		if timeDiff >= timeDiffLimit then
-			Strategies.reset("time", "TimeSplit limit reached")
+			Strategies.reset("time", "Time Requirement limit reached")
+		--else
+		--	p("~"..splitNum..". "..order[splitNum]..": "..Utils.elapsedTime().." | "..timeDiff.." | "..timeDrift)
 		end
 		splitCheck = 0
 	else

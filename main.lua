@@ -14,7 +14,7 @@ local PAINT_ON     = true -- Display contextual information while the bot runs
 
 -- START CODE (hard hats on)
 
-VERSION = "2.4.8"
+VERSION = "2.4.9"
 CURRENT_SPEED = nil
 
 local Data = require "data.data"
