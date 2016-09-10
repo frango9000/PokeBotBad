@@ -8,8 +8,7 @@ AFTER_BROCK_SPEED = 1500
 AFTER_MOON_SPEED = 500
 E4_SPEED = 200
 
-local SeedList = require "util.seedlist"
-CUSTOM_SEED = true -- Set in util/seedlist
+local CUSTOM_SEED  = nil -- Set to a known seed to replay it, or leave nil for random runs
 local NIDORAN_NAME = "A" -- Set this to the single character to name Nidoran (note, to replay a seed, it MUST match!)
 local PAINT_ON     = true -- Display contextual information while the bot runs
 
@@ -64,11 +63,9 @@ function resetAll()
   	client.speedmode(INITIAL_SPEED)
 
 	if CUSTOM_SEED then
-		Data.run.seed = SeedList.GetNextSeed()
-	end
-	if Data.run.seed then
+		Data.run.seed = CUSTOM_SEED
 		Strategies.replay = true
-		p("RUNNING WITH A SEED PLAYLIST. CURRENT SEED : ("..NIDORAN_NAME.." "..Data.run.seed..")", true)
+		p("RUNNING WITH A FIXED SEED ("..NIDORAN_NAME.." "..Data.run.seed.."), every run will play out identically!", true)
 	else
 		Data.run.seed = os.time()
 		print("PokeBot "..Utils.capitalize(Data.gameName).." v"..VERSION..": "..(BEAST_MODE and "BEAST MODE seed" or "Seed:").." "..Data.run.seed)
