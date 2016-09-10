@@ -58,7 +58,7 @@ Strategies.timeRequirements = {
 	end,
 
 	nidoran = function()
-		return 7.5 + timeForFlier()
+		return 8.5 + timeForFlier()
 	end,
 
 	forest = function() --YOLO
@@ -74,7 +74,7 @@ Strategies.timeRequirements = {
 	end,
 
 	mt_moon = function()
-		local timeLimit = 28.25 + timeForStats(true)
+		local timeLimit = 29.25 + timeForStats(true)
 		if Pokemon.inParty("paras", "sandshrew") then
 			timeLimit = timeLimit + 0.25
 		end
@@ -85,7 +85,7 @@ Strategies.timeRequirements = {
 	end,
 
 	mankey = function()
-		return 31.25 + timeForStats()
+		return 35.25 + timeForStats()
 	end,
 
 	misty = function() --TWEET
@@ -97,27 +97,27 @@ Strategies.timeRequirements = {
 	end,
 
 	fly = function() -- safari_carbos #1
-		return 52.75 + timeForStats()
+		return 55.75 + timeForStats()
 	end,
 
 	flute = function() -- safari_carbos #2
-		return 63.25 + timeForStats()
+		return 65.25 + timeForStats()
 	end,
 
 	silph = function() -- safari_carbos #3 (68.25)
-		return 71 + timeForStats()
+		return 72.25 + timeForStats()
 	end,
 
 	erika = function()
-		return 77
-	end,
-
-	koga = function()
 		return 80
 	end,
 
+	koga = function()
+		return 84
+	end,
+
 	sabrina = function()
-		return 82
+		return 85
 	end,
 
 	mom = function() --YOLO
@@ -125,7 +125,7 @@ Strategies.timeRequirements = {
 	end,
 
 	blaine = function()
-		return 88
+		return 92
 	end,
 
 	victory_road = function() --TWEET

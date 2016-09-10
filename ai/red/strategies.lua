@@ -131,7 +131,7 @@ Strategies.timeRequirements = {
 	end,
 
 	safari_carbos = function()
-		return 68.25 + timeForStats()
+		return 72.25 + timeForStats()
 	end,
 
 	victory_road = function() --PB
