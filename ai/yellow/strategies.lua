@@ -58,7 +58,7 @@ Strategies.timeRequirements = {
 	end,
 
 	nidoran = function()
-		return 8.5 + timeForFlier()
+		return 7.5 + timeForFlier()
 	end,
 
 	forest = function() --YOLO
@@ -74,7 +74,7 @@ Strategies.timeRequirements = {
 	end,
 
 	mt_moon = function()
-		local timeLimit = 29.25 + timeForStats(true)
+		local timeLimit = 28.25 + timeForStats(true)
 		if Pokemon.inParty("paras", "sandshrew") then
 			timeLimit = timeLimit + 0.25
 		end
