@@ -1250,10 +1250,6 @@ Strategies.functions = {
 			local nidoranStatus = nil
 			if att < 15 and spd < 14 and scl < 12 then
 				nidoranStatus = Utils.random {
-					"let's just forget this ever happened",
-					"I hate everything BibleThump ",
-					"perfect stats Kappa ",
-					"there's always the next one..",
 					"worst possible stats hype",
 					"unrunnable everything -.- "
 				}
@@ -1749,20 +1745,7 @@ Strategies.functions = {
 	epicCutscene = function()
 		Bridge.chatRandom(
 			" CUTSCENE HYPE!",
-			" Please, sit back and enjoy the cutscene.",
-			"is enjoying the scenery Kappa b",
-			" Wait, is it too late to get Mew from under the truck??",
-			" Cutscenes DansGame",
-			" Your regularly scheduled run will continue in just a moment. Thank you for your patience.",
-			" Guys I think the game softlocked Kappa",
-			" Perfect, I needed a quick bathroom break.",
-			" *yawn*",
-			" :z",
-			" I think that ship broke the ocean.",
-			" Ahh, lovely weather in Vermilion City this time of year, isn't it?",
-			" As a devout practicing member of the Church of Going Fast, I find the depiction of this unskippable cutscene offensive, frankly.",
-			" Anyone else feel cheated we didn't actually get to ride to some far off land in that boat?",
-			" So let me get this straight, the ship hadn't even left port yet, and the captain was already seasick? DansGame" --amanazi
+			" Please, sit back and enjoy the cutscene."
 		)
 		return true
 	end,
