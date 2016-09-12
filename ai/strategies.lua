@@ -1238,7 +1238,7 @@ Strategies.functions = {
 		}
 		Bridge.stats(att.." "..def.." "..spd.." "..scl)
 		Bridge.chat("Stats: Att: "..att..", Def: "..def..", Spd: "..spd..", Spc: "..scl..".")
-		Bridge.chat("DVs: Att: "..attDV..", Def: "..defDV..", Spd: "..spdDV..", Spc: "..sclDV..".")
+		--Bridge.chat("DVs: Att: "..attDV..", Def: "..defDV..", Spd: "..spdDV..", Spc: "..sclDV..".")
 
 		local resetsForStats = att < 15 or spd < 14 or scl < 12
 		local restrictiveStats = not Data.yellow and RESET_FOR_TIME
@@ -2312,7 +2312,7 @@ function Strategies.init(midGame)
 	local nido = Pokemon.inParty("nidoran", "nidorino", "nidoking")
 	if nido then
 		local attDV, defDV, spdDV, sclDV = Pokemon.getDVs(nido)
-		Bridge.chat("Stats: Att: "..att..", Def: "..def..", Spd: "..spd..", Spc: "..scl..".")
+		--Bridge.chat("Stats: Att: "..att..", Def: "..def..", Spd: "..spd..", Spc: "..scl..".")
 		Bridge.chat("DVs: Att: "..attDV..", Def: "..defDV..", Spd: "..spdDV..", Spc: "..sclDV..".")
 		stats.nidoran = {
 			rating = 1,
