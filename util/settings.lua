@@ -60,7 +60,7 @@ end
 
 function Settings.startNewAdventure()
 	local startMenu, withBattleStyle
-	if Data.gameName ~= "red" then
+	if Data.gameName ~= "red" or Data.gameName ~= "blue" then
 		withBattleStyle = "battle_style"
 	end
 	if Data.yellow then
