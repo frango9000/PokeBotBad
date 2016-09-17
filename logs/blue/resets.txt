@@ -18,9 +18,3 @@ Reset at Brock's Gym | 0:15:19 | +03:49 | Oops, forgot to switch to nidoran, now
 Reset at Pallet Rival | 0:02:49 | +00:00 | Bad Squirtle - 10 attack, 11 special. | 1474084069
 Reset at Nidoran grass | 0:05:45 | +03:31.8 | Ran too low on Pokeballs. | 1474084242
 Reset at Brock's Gym | 0:15:53 | +04:23 | Oops, forgot to switch to nidoran, now not right level!. | 1474084275
-Reset at Brock's Gym | 0:14:01 | +02:31 | Oops, forgot to switch to nidoran, now not right level!. | 1474084373
-Reset at Brock's Gym | 0:18:21 | +06:51 | Oops, forgot to switch to nidoran, now not right level!. | 1474084743
-Reset at Nidoran grass | 0:07:04 | +04:50.8 | Ran too low on Pokeballs. | 1474084852
-Reset at Brock's Gym | 0:18:32 | +07:02 | Oops, forgot to switch to nidoran, now not right level!. | 1474084892
-Reset at Brock's Gym | 0:20:14 | +08:44 | Oops, forgot to switch to nidoran, now not right level!. | 1474085004
-Reset at Brock's Gym | 0:13:39 | +02:09 | Oops, forgot to switch to nidoran, now not right level!. | 1474085125
