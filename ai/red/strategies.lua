@@ -1370,6 +1370,7 @@ strategyFunctions.rareCandyGiovanni = function()
 		if Inventory.count("rare_candy") > 1 then
 			if Menu.pause() then
 				Inventory.use("rare_candy")
+				status.menuOpened = true
 			end
 			return false
 		end
@@ -1470,6 +1471,7 @@ strategyFunctions.fightKoga = function()
 					forced = "horn_drill"
 					Strategies.chat("drilling", "is at low enough HP to try Horn Drill on Weezing")
 					Control.ignoreMiss = true
+					Control.canDie(true)
 				elseif Battle.opponentDamaged(2) then
 					Inventory.use("pokeflute", nil, true)
 					return false
