@@ -1996,3 +1996,256 @@ Reset at Nidoran grass | 0:08:33 | +06:33 | Ran too low on Pokeballs. | 14736332
 Reset at Nidoran grass | 0:08:31 | +06:31 | Took too long to find a suitable Nidoran. | 1473499423
 Reset at Koga's Gym | 1:26:10 | +06:10 | Yolo strats. | 1473617395
 Reset at Koga's Gym | 1:25:38 | +05:38 | Yolo strats. | 1473245782
+Reset at Viridian Forest | 0:08:34 | +00:34 | Bad Nidoran - unrunnable speed. | 1510962494
+Reset at Nidoran grass | 0:07:41 | +05:41 | Ran too low on Pokeballs. | 1510962639
+Reset at Viridian Forest | 0:09:45 | +01:45 | Bad Nidoran - unrunnable attack. | 1510962697
+Reset at Nidoran grass | 0:08:49 | +06:49 | Ran too low on Pokeballs. | 1510963844
+Reset at Viridian Forest | 0:12:06 | +03:36 | Bad Nidoran - unrunnable attack, unrunnable speed. | 1510963911
+Reset at Viridian Forest | 0:12:02 | +03:32 | Bad Nidoran - unrunnable everything -.- . | 1510964000
+Reset at Nidoran grass | 0:07:07 | +05:07 | Ran too low on Pokeballs. | 1510964088
+Reset at Viridian Forest | 0:09:21 | +00:51 | Bad Nidoran - unrunnable speed. | 1510964136
+Reset at Viridian Forest | 0:09:19 | +01:19 | Bad Nidoran - unrunnable special. | 1510964204
+Reset at Nidoran grass | 0:07:01 | +05:01 | Ran too low on Pokeballs. | 1510964272
+Reset at Surge's Gym | 0:54:04 | +12:32.5 | Critical'd. | 1510964321
+Reset at Viridian Forest | 0:08:28 | +00:28 | Bad Nidoran - unrunnable attack, unrunnable special. | 1510964724
+Reset at Nidoran grass | 0:08:07 | +06:07 | Ran too low on Pokeballs. | 1510964787
+Reset at Viridian Forest | 0:11:37 | +03:07 | Bad Nidoran - worst possible stats hype. | 1510964843
+Reset at Nidoran grass | 0:07:08 | +05:08 | Ran too low on Pokeballs. | 1510964927
+Reset at Viridian Forest | 0:11:36 | +03:06 | Bad Nidoran - unrunnable attack. | 1510964978
+Reset at Viridian Forest | 0:09:39 | +01:39 | Ran too low on Pokeballs. | 1510965063
+Reset at Viridian Forest | 0:10:35 | +02:05 | Bad Nidoran - unrunnable attack, unrunnable special. | 1510965134
+Reset at Nidoran grass | 0:10:21 | +08:21 | Ran too low on Pokeballs. | 1510965212
+Reset at Viridian Forest | 0:13:32 | +05:02 | Bad Nidoran - unrunnable attack, unrunnable speed. | 1510965284
+Reset at Pokemon Tower | 1:09:53 | +13:42.5 | Confusion'd. | 1510965384
+Reset at Viridian Forest | 0:09:40 | +01:40 | Bad Nidoran - unrunnable attack. | 1510965893
+Reset at Nidoran grass | 0:09:05 | +07:05 | Ran too low on Pokeballs. | 1510965964
+Reset at Agatha | 1:57:44 | +11:44 | Died. | 1510966027
+Reset at Viridian Forest | 0:12:22 | +03:52 | Bad Nidoran - unrunnable speed, unrunnable special. | 1510966848
+Reset at Viridian Forest | 0:09:23 | +01:23 | Bad Nidoran - unrunnable special. | 1510966941
+Reset at Misty's Gym | 0:43:23 | +07:53 | Ran out of potions. | 1510967012
+Reset at Viridian Forest | 0:12:52 | +04:22 | Bad Nidoran - unrunnable attack. | 1510967355
+Reset at Viridian Forest | 0:12:45 | +04:15 | Bad Nidoran - unrunnable speed. | 1510967454
+Reset at Misty's Gym | 0:43:12 | +07:25.5 | Died. | 1510967544
+Reset at Viridian Forest | 0:10:00 | +02:00 | Bad Nidoran - unrunnable attack, unrunnable speed. | 1510967874
+Reset at Viridian Forest | 0:10:51 | +02:51 | Bad Nidoran - unrunnable attack, unrunnable speed. | 1510968825
+Reset at Viridian Forest | 0:08:33 | +00:33 | Bad Nidoran - unrunnable special. | 1510968905
+Reset at Viridian Forest | 0:08:36 | +00:36 | Bad Nidoran - unrunnable attack, unrunnable speed. | 1510968973
+Reset at Viridian Forest | 0:11:19 | +02:49 | Bad Nidoran - unrunnable speed. | 1510969035
+Reset at Viridian Forest | 0:08:50 | +00:50 | Bad Nidoran - unrunnable speed. | 1510969116
+Reset at Nidoran grass | 0:06:56 | +04:56 | Ran too low on Pokeballs. | 1510969179
+Reset at Surge's Gym | 0:54:31 | +13:14.5 | Critical'd. | 1510969226
+Reset at Viridian Forest | 0:09:55 | +01:55 | Bad Nidoran - unrunnable attack, unrunnable speed. | 1510969662
+Reset at Nidoran grass | 0:08:01 | +06:01 | Ran too low on Pokeballs. | 1510969741
+Reset at Brock's Gym | 0:21:22 | +12:52 | Died. | 1510969801
+Reset at Nidoran grass | 0:06:57 | +04:57 | Ran too low on Pokeballs. | 1510969985
+Reset at Nidoran grass | 0:07:17 | +05:17 | Ran too low on Pokeballs. | 1510970035
+Reset at Blaine's Gym | 1:38:28 | +13:28 | Critical'd. | 1510970088
+Reset at Nidoran grass | 0:12:23 | +10:23 | Ran too low on Pokeballs. | 1510970848
+Reset at Nidoran grass | 0:07:28 | +05:28 | Ran too low on Pokeballs. | 1510970942
+Reset at Viridian Forest | 0:10:06 | +02:06 | Bad Nidoran - unrunnable attack, unrunnable special. | 1510970997
+Reset at Viridian Forest | 0:09:16 | +01:16 | Bad Nidoran - unrunnable speed. | 1510971082
+Reset at Viridian Forest | 0:14:38 | +06:08 | Bad Nidoran - unrunnable speed, unrunnable special. | 1510971158
+Reset at Viridian Forest | 0:12:26 | +03:56 | Bad Nidoran - unrunnable speed, unrunnable special. | 1510971279
+Reset at Viridian Forest | 0:10:05 | +01:35 | Bad Nidoran - unrunnable attack. | 1510971382
+Reset at Viridian Forest | 0:12:21 | +03:51 | Bad Nidoran - unrunnable attack, unrunnable speed. | 1510971457
+Reset at Nidoran grass | 0:09:12 | +07:12 | Ran too low on Pokeballs. | 1510971555
+Reset at Viridian Forest | 0:08:52 | +00:52 | Bad Nidoran - unrunnable attack, unrunnable speed. | 1510971621
+Reset at Viridian Forest | 0:09:20 | +01:20 | Bad Nidoran - unrunnable speed. | 1510971689
+Reset at Viridian Forest | 0:10:48 | +02:18 | Bad Nidoran - unrunnable speed, unrunnable special. | 1510971760
+Reset at Nidoran grass | 0:08:22 | +06:22 | Ran too low on Pokeballs. | 1510971841
+Reset at Gary | 2:01:20 | +11:20 | Critical'd. | 1510971920
+Reset at Nidoran grass | 0:07:07 | +05:07 | Ran too low on Pokeballs. | 1510972814
+Reset at Viridian Forest | 0:11:08 | +02:38 | Bad Nidoran - unrunnable speed. | 1510972865
+Reset at Viridian Forest | 0:08:46 | +00:46 | Bad Nidoran - unrunnable special. | 1510972950
+Reset at Rock Tunnel | 1:00:54 | +10:46.5 | Slumbering. | 1510973921
+Reset at Route 3 | 0:21:03 | +05:33 | Ran out of potions. | 1510974545
+Reset at Brock's Gym | 0:18:06 | +09:36 | Died. | 1510974752
+Reset at Nidoran grass | 0:08:44 | +06:44 | Ran too low on Pokeballs. | 1510974903
+Reset at Viridian Forest | 0:10:15 | +02:15 | Bad Nidoran - unrunnable speed. | 1510974971
+Reset at Nidoran grass | 0:11:05 | +09:05 | Ran too low on Pokeballs. | 1510975054
+Reset at Viridian Forest | 0:11:10 | +02:40 | Bad Nidoran - unrunnable speed, unrunnable special. | 1510975141
+Reset at Viridian Forest | 0:13:30 | +05:00 | Bad Nidoran - unrunnable special. | 1510975231
+Reset at Viridian Forest | 0:10:08 | +01:38 | Bad Nidoran - unrunnable special. | 1510976233
+Reset at Nidoran grass | 0:07:31 | +05:31 | Ran too low on Pokeballs. | 1510976314
+Reset at Nidoran grass | 0:08:37 | +06:37 | Ran too low on Pokeballs. | 1510976370
+Reset at Misty's Gym | 0:41:41 | +06:09.5 | Died. | 1510976437
+Reset at Nidoran grass | 0:06:32 | +04:32 | Ran too low on Pokeballs. | 1510976780
+Reset at Viridian Forest | 0:09:31 | +01:31 | Bad Nidoran - unrunnable speed. | 1510976829
+Reset at Rock Tunnel | 0:57:54 | +07:51 | Slumbering. | 1510976904
+Reset at Viridian Forest | 0:10:39 | +02:09 | Bad Nidoran - unrunnable attack, unrunnable speed. | 1510977364
+Reset at Viridian Forest | 0:10:50 | +02:50 | Bad Nidoran - unrunnable special. | 1510977450
+Reset at Nidoran grass | 0:08:15 | +06:15 | Ran too low on Pokeballs. | 1510977537
+Reset at Viridian Forest | 0:11:36 | +03:06 | Bad Nidoran - worst possible stats hype. | 1510977600
+Reset at Viridian Forest | 0:09:03 | +01:03 | Bad Nidoran - unrunnable attack. | 1510977694
+Reset at Viridian Forest | 0:10:13 | +01:43 | Bad Nidoran - unrunnable speed. | 1510977766
+Reset at Viridian Forest | 0:09:18 | +01:18 | Bad Nidoran - unrunnable speed. | 1510977847
+Reset at Viridian Forest | 0:09:56 | +01:56 | Bad Nidoran - unrunnable attack, unrunnable speed. | 1510977921
+Reset at Viridian Forest | 0:15:57 | +07:27 | Bad Nidoran - unrunnable speed. | 1510978000
+Reset at Nidoran grass | 0:06:47 | +04:47 | Ran too low on Pokeballs. | 1510978129
+Reset at Nidoran grass | 0:08:59 | +06:59 | Ran too low on Pokeballs. | 1510978183
+Reset at Viridian Forest | 0:09:23 | +01:23 | Bad Nidoran - unrunnable speed, unrunnable special. | 1510978252
+Reset at Misty's Gym | 0:44:14 | +08:30.5 | Critical'd. | 1510978328
+Reset at Nidoran grass | 0:08:41 | +06:41 | Ran too low on Pokeballs. | 1510979578
+Reset at Nidoran grass | 0:11:07 | +09:07 | Ran too low on Pokeballs. | 1510979643
+Reset at Viridian Forest | 0:11:47 | +03:17 | Bad Nidoran - unrunnable attack, unrunnable speed. | 1510979729
+Reset at Viridian Forest | 0:10:13 | +02:13 | Bad Nidoran - unrunnable speed. | 1510979824
+Reset at Nidoran grass | 0:07:30 | +05:30 | Ran too low on Pokeballs. | 1510979905
+Reset at Viridian Forest | 0:12:38 | +04:08 | Bad Nidoran - unrunnable speed. | 1510979961
+Reset at Nidoran grass | 0:11:29 | +09:29 | Ran too low on Pokeballs. | 1510980065
+Reset at Viridian Forest | 0:08:52 | +00:52 | Bad Nidoran - unrunnable attack, unrunnable speed. | 1510980147
+Reset at Viridian Forest | 0:09:13 | +01:13 | Bad Nidoran - unrunnable special. | 1510980213
+Reset at Nidoran grass | 0:11:10 | +09:10 | Ran too low on Pokeballs. | 1510980282
+Reset at Giovanni's Gym | 1:37:18 | +05:18 | Critical'd. | 1510980363
+Reset at Viridian Forest | 0:16:17 | +07:47 | Bad Nidoran - unrunnable attack. | 1510981057
+Reset at Viridian Forest | 0:10:18 | +02:18 | Bad Nidoran - unrunnable speed. | 1510981177
+Reset at Nidoran grass | 0:09:56 | +07:56 | Ran too low on Pokeballs. | 1510981254
+Reset at Viridian Forest | 0:15:28 | +06:58 | Bad Nidoran - unrunnable attack. | 1510981325
+Reset at Nidoran grass | 0:08:13 | +06:13 | Ran too low on Pokeballs. | 1510981439
+Reset at Viridian Forest | 0:11:55 | +03:25 | Bad Nidoran - unrunnable speed. | 1510981496
+Reset at Viridian Forest | 0:09:54 | +01:54 | Bad Nidoran - unrunnable attack, unrunnable speed. | 1510981585
+Reset at Viridian Forest | 0:08:56 | +00:56 | Bad Nidoran - worst possible stats hype. | 1510981659
+Reset at Viridian Forest | 0:11:10 | +02:40 | Bad Nidoran - unrunnable attack, unrunnable special. | 1510981725
+Reset at Viridian Forest | 0:10:54 | +02:54 | Bad Nidoran - unrunnable attack, unrunnable special. | 1510981808
+Reset at Viridian Forest | 0:09:22 | +01:22 | Bad Nidoran - unrunnable special. | 1510981889
+Reset at Viridian Forest | 0:10:34 | +02:34 | Bad Nidoran - unrunnable special. | 1510981956
+Reset at Viridian Forest | 0:10:06 | +02:06 | Bad Nidoran - unrunnable speed. | 1510982032
+Reset at Nidoran grass | 0:07:56 | +05:56 | Ran too low on Pokeballs. | 1510982105
+Reset at Viridian Forest | 0:14:13 | +05:43 | Bad Nidoran - unrunnable attack, unrunnable speed. | 1510982967
+Reset at Misty's Gym | 0:43:08 | +07:35 | Critical'd. | 1510983069
+Reset at Brock's Gym | 0:15:58 | +07:28 | Died. | 1510983382
+Reset at Viridian Forest | 0:10:25 | +01:55 | Bad Nidoran - unrunnable attack. | 1510983506
+Reset at Nidoran grass | 0:11:13 | +09:13 | Ran too low on Pokeballs. | 1510983580
+Reset at Viridian Forest | 0:09:26 | +01:26 | Bad Nidoran - unrunnable special. | 1510983658
+Reset at Nidoran grass | 0:07:12 | +05:12 | Ran too low on Pokeballs. | 1510983725
+Reset at Nidoran grass | 0:07:35 | +05:35 | Ran too low on Pokeballs. | 1510983773
+Reset at Viridian Forest | 0:14:43 | +06:13 | Bad Nidoran - unrunnable attack. | 1510983825
+Reset at Viridian Forest | 0:11:43 | +03:13 | Bad Nidoran - unrunnable speed. | 1510983929
+Reset at Nidoran grass | 0:08:02 | +06:02 | Ran too low on Pokeballs. | 1510984013
+Reset at Viridian Forest | 0:08:44 | +00:44 | Bad Nidoran - unrunnable speed, unrunnable special. | 1510984068
+Reset at Viridian Forest | 0:09:23 | +01:23 | Bad Nidoran - unrunnable attack, unrunnable speed. | 1510984132
+Reset at Viridian Forest | 0:11:10 | +03:10 | Bad Nidoran - unrunnable attack, unrunnable special. | 1510984199
+Reset at Viridian Forest | 0:10:46 | +02:16 | Bad Nidoran - unrunnable speed. | 1510984280
+Reset at Nidoran grass | 0:09:50 | +07:50 | Ran too low on Pokeballs. | 1510984357
+Reset at Viridian Forest | 0:09:31 | +01:31 | Bad Nidoran - unrunnable attack, unrunnable speed. | 1510984426
+Reset at Viridian Forest | 0:12:01 | +03:31 | Bad Nidoran - unrunnable speed. | 1510984494
+Reset at Viridian Forest | 0:09:50 | +01:50 | Bad Nidoran - unrunnable attack, unrunnable special. | 1510984581
+Reset at Surge's Gym | 0:52:52 | +11:20.5 | Critical'd. | 1510984652
+Reset at Misty's Gym | 0:39:49 | +04:28 | Critical'd. | 1510985040
+Reset at Route 3 | 0:21:19 | +06:19 | Critical'd. | 1510985337
+Reset at Viridian Forest | 0:12:20 | +03:50 | Bad Nidoran - unrunnable speed, unrunnable special. | 1510985502
+Reset at Viridian Forest | 0:11:20 | +03:20 | Bad Nidoran - unrunnable attack. | 1510985589
+Reset at Viridian Forest | 0:09:36 | +01:36 | Bad Nidoran - unrunnable speed. | 1510985669
+Reset at Nidoran grass | 0:07:26 | +05:26 | Ran too low on Pokeballs. | 1510985739
+Reset at Viridian Forest | 0:08:55 | +00:55 | Bad Nidoran - unrunnable special. | 1510985788
+Reset at Nidoran grass | 0:07:14 | +05:14 | Ran too low on Pokeballs. | 1510985851
+Reset at Viridian Forest | 0:11:54 | +03:24 | Bad Nidoran - unrunnable speed. | 1510985900
+Reset at Nidoran grass | 0:07:49 | +05:49 | Ran too low on Pokeballs. | 1510985984
+Reset at Nidoran grass | 0:13:17 | +11:17 | Ran too low on Pokeballs. | 1510986037
+Reset at Nidoran grass | 0:08:32 | +06:32 | Ran too low on Pokeballs. | 1510986127
+Reset at Viridian Forest | 0:09:56 | +01:56 | Bad Nidoran - unrunnable special. | 1510986185
+Reset at Nidoran grass | 0:10:52 | +08:52 | Ran too low on Pokeballs. | 1510986256
+Reset at Nugget Bridge | 0:34:38 | +05:26 | Confusion'd. | 1510986331
+Reset at Nidoran grass | 0:16:37 | +14:37 | Ran too low on Pokeballs. | 1510986599
+Reset at Nidoran grass | 0:07:01 | +05:01 | Ran too low on Pokeballs. | 1510986714
+Reset at Viridian Forest | 0:09:37 | +01:37 | Bad Nidoran - unrunnable speed. | 1510986761
+Reset at Viridian Forest | 0:10:51 | +02:21 | Bad Nidoran - unrunnable attack. | 1510986831
+Reset at Nidoran grass | 0:07:31 | +05:31 | Ran too low on Pokeballs. | 1510987712
+Reset at Viridian Forest | 0:13:42 | +05:12 | Bad Nidoran - unrunnable special. | 1510987763
+Reset at Viridian Forest | 0:11:57 | +03:27 | Bad Nidoran - unrunnable speed. | 1510987861
+Reset at Gary | 1:56:16 | +06:16 | Critical'd. | 1510987946
+Reset at Nidoran grass | 0:08:19 | +06:19 | Ran too low on Pokeballs. | 1510988732
+Reset at Giovanni's Gym | 1:39:06 | +07:06 | Critical'd. | 1510988787
+Reset at Viridian Forest | 0:11:51 | +03:21 | Bad Nidoran - unrunnable speed. | 1510989471
+Reset at Nidoran grass | 0:07:39 | +05:39 | Ran too low on Pokeballs. | 1510989555
+Reset at Nidoran grass | 0:07:30 | +05:30 | Ran too low on Pokeballs. | 1510989606
+Reset at Misty's Gym | 0:42:03 | +06:42 | Critical'd. | 1510989657
+Reset at Viridian Forest | 0:09:27 | +01:27 | Bad Nidoran - unrunnable special. | 1510989961
+Reset at Viridian Forest | 0:11:22 | +02:52 | Bad Nidoran - unrunnable speed. | 1510990028
+Reset at Nidoran grass | 0:06:55 | +04:55 | Ran too low on Pokeballs. | 1510990110
+Reset at Nidoran grass | 0:13:42 | +11:42 | Ran too low on Pokeballs. | 1510990158
+Reset at Viridian Forest | 0:09:54 | +01:54 | Bad Nidoran - unrunnable attack. | 1510990254
+Reset at Nugget Bridge | 0:38:53 | +09:59 | Sand-Attack'd. | 1510990325
+Reset at Nidoran grass | 0:08:59 | +06:59 | Died. | 1510990615
+Reset at Viridian Forest | 0:10:54 | +02:54 | Bad Nidoran - unrunnable attack. | 1510990675
+Reset at Viridian Forest | 0:11:39 | +03:09 | Bad Nidoran - unrunnable everything -.- . | 1510990754
+Reset at Nidoran grass | 0:06:54 | +04:54 | Ran too low on Pokeballs. | 1510990835
+Reset at Nidoran grass | 0:10:19 | +08:19 | Ran too low on Pokeballs. | 1510990882
+Reset at Nidoran grass | 0:08:08 | +06:08 | Ran too low on Pokeballs. | 1510990952
+Reset at Koga's Gym | 1:28:24 | +08:24 | Critical'd. | 1510991007
+Reset at Viridian Forest | 0:10:05 | +02:05 | Bad Nidoran - unrunnable special. | 1511002991
+Reset at Nidoran grass | 0:07:00 | +05:00 | Ran too low on Pokeballs. | 1511003058
+Reset at Nidoran grass | 0:08:17 | +06:17 | Ran too low on Pokeballs. | 1511003102
+Reset at Viridian Forest | 0:11:40 | +03:40 | Bad Nidoran - unrunnable special. | 1511003161
+Reset at Nidoran grass | 0:08:24 | +06:24 | Ran too low on Pokeballs. | 1511003247
+Reset at Nidoran grass | 0:09:18 | +07:18 | Ran too low on Pokeballs. | 1511014225
+Reset at Viridian Forest | 0:13:04 | +04:34 | Bad Nidoran - unrunnable speed. | 1511014278
+Reset at Viridian Forest | 0:11:16 | +03:16 | Bad Nidoran - unrunnable attack. | 1511014359
+Reset at Viridian Forest | 0:11:26 | +02:56 | Bad Nidoran - unrunnable speed, unrunnable special. | 1511014430
+Reset at Nidoran grass | 0:11:10 | +09:10 | Ran too low on Pokeballs. | 1511014500
+Reset at Agatha | 1:51:17 | +05:17 | Confusion'd. | 1511014563
+Reset at Nidoran grass | 0:07:05 | +05:05 | Ran too low on Pokeballs. | 1511015322
+Reset at Nidoran grass | 0:09:33 | +07:33 | Ran too low on Pokeballs. | 1511015371
+Reset at Nidoran grass | 0:07:23 | +05:23 | Ran too low on Pokeballs. | 1511015438
+Reset at Nidoran grass | 0:09:33 | +07:33 | Ran too low on Pokeballs. | 1511015489
+Reset at Viridian Forest | 0:10:06 | +02:06 | Bad Nidoran - unrunnable speed. | 1511026636
+Reset at Viridian Forest | 0:10:19 | +01:49 | Bad Nidoran - unrunnable speed, unrunnable special. | 1511026697
+Reset at Viridian Forest | 0:09:45 | +01:45 | Bad Nidoran - unrunnable speed, unrunnable special. | 1511026758
+Reset at Nidoran grass | 0:08:07 | +06:07 | Ran too low on Pokeballs. | 1511027966
+Reset at Viridian Forest | 0:11:10 | +03:10 | Bad Nidoran - unrunnable attack, unrunnable special. | 1511028136
+Reset at Viridian Forest | 0:09:29 | +01:29 | Bad Nidoran - unrunnable speed. | 1511028245
+Reset at Viridian Forest | 0:10:14 | +01:44 | Bad Nidoran - unrunnable attack. | 1511028339
+Reset at Nidoran grass | 0:10:33 | +08:33 | Ran too low on Pokeballs. | 1511028583
+Reset at Nidoran grass | 0:09:04 | +07:04 | Ran too low on Pokeballs. | 1511028650
+Reset at Misty's Gym | 0:43:29 | +07:51.5 | Confusion'd. | 1511028708
+Reset at Nidoran grass | 0:07:55 | +05:55 | Ran too low on Pokeballs. | 1511028973
+Reset at Viridian Forest | 0:09:16 | +00:46 | Critical'd. | 1511029012
+Reset at Viridian Forest | 0:10:08 | +01:38 | Bad Nidoran - unrunnable attack. | 1511030948
+Reset at Viridian Forest | 0:11:04 | +02:34 | Bad Nidoran - unrunnable speed. | 1511032024
+Reset at Nidoran grass | 0:07:36 | +05:36 | Ran too low on Pokeballs. | 1511032098
+Reset at Viridian Forest | 0:09:26 | +00:56 | Bad Nidoran - unrunnable attack, unrunnable speed. | 1511032146
+Reset at Viridian Forest | 0:10:50 | +02:50 | Bad Nidoran - unrunnable attack. | 1511032207
+Reset at Nidoran grass | 0:07:42 | +05:42 | Ran too low on Pokeballs. | 1511032278
+Reset at Viridian Forest | 0:09:11 | +01:11 | Bad Nidoran - unrunnable speed. | 1511032325
+Reset at Nidoran grass | 0:07:44 | +05:44 | Ran too low on Pokeballs. | 1511032384
+Reset at Nidoran grass | 0:11:59 | +09:59 | Ran too low on Pokeballs. | 1511032432
+Reset at Viridian Forest | 0:09:36 | +01:06 | Bad Nidoran - unrunnable attack, unrunnable speed. | 1511032510
+Reset at Nidoran grass | 0:06:31 | +04:31 | Ran too low on Pokeballs. | 1511032573
+Reset at Misty's Gym | 0:42:54 | +07:36 | Critical'd. | 1511032613
+Reset at Brock's Gym | 0:18:13 | +09:43 | Died. | 1511032912
+Reset at Viridian Forest | 0:13:34 | +05:04 | Bad Nidoran - unrunnable speed. | 1511033049
+Reset at Nidoran grass | 0:13:35 | +11:35 | Ran too low on Pokeballs. | 1511033142
+Reset at Nidoran grass | 0:09:51 | +07:51 | Ran too low on Pokeballs. | 1511033410
+Reset at Viridian Forest | 0:09:41 | +01:41 | Bad Nidoran - unrunnable speed. | 1511033473
+Reset at Viridian Forest | 0:09:45 | +01:45 | Bad Nidoran - unrunnable attack, unrunnable speed. | 1511033536
+Reset at Nidoran grass | 0:08:42 | +06:42 | Ran too low on Pokeballs. | 1511033598
+Reset at Nidoran grass | 0:07:05 | +05:05 | Ran too low on Pokeballs. | 1511033650
+Reset at Nidoran grass | 0:09:12 | +07:12 | Ran too low on Pokeballs. | 1511039716
+Reset at Misty's Gym | 0:42:28 | +06:53.5 | Died. | 1511039894
+Reset at Viridian Forest | 0:09:46 | +01:16 | Bad Nidoran - unrunnable special. | 1511040218
+Reset at Nidoran grass | 0:06:54 | +04:54 | Ran too low on Pokeballs. | 1511040291
+Reset at Viridian Forest | 0:10:46 | +02:46 | Bad Nidoran - unrunnable special. | 1511041136
+Reset at Misty's Gym | 0:42:31 | +07:10 | Critical'd. | 1511041214
+Reset at Viridian Forest | 0:10:50 | +02:20 | Bad Nidoran - unrunnable everything -.- . | 1511041563
+Reset at Viridian Forest | 0:09:52 | +01:22 | Bad Nidoran - unrunnable special. | 1511041646
+Reset at Nidoran grass | 0:07:57 | +05:57 | Ran too low on Pokeballs. | 1511041718
+Reset at Nidoran grass | 0:07:43 | +05:43 | Ran too low on Pokeballs. | 1511041772
+Reset at Nidoran grass | 0:07:12 | +05:12 | Ran too low on Pokeballs. | 1511041824
+Reset at Viridian Forest | 0:09:12 | +01:12 | Bad Nidoran - unrunnable attack. | 1511041872
+Reset at Viridian Forest | 0:11:03 | +02:33 | Bad Nidoran - unrunnable attack. | 1511041938
+Reset at Viridian Forest | 0:11:37 | +03:07 | Bad Nidoran - unrunnable special. | 1511042020
+Reset at Viridian Forest | 0:10:35 | +02:05 | Bad Nidoran - unrunnable attack, unrunnable speed. | 1511042105
+Reset at Viridian Forest | 0:10:10 | +02:10 | Bad Nidoran - unrunnable attack. | 1511042187
+Reset at Viridian Forest | 0:09:57 | +01:57 | Bad Nidoran - unrunnable speed, unrunnable special. | 1511042264
+Reset at Nidoran grass | 0:08:37 | +06:37 | Ran too low on Pokeballs. | 1511042337
+Reset at Viridian Forest | 0:11:14 | +02:44 | Bad Nidoran - unrunnable attack. | 1511042407
+Reset at Viridian Forest | 0:10:44 | +02:14 | Bad Nidoran - unrunnable attack, unrunnable special. | 1511042502
+Reset at Nidoran grass | 0:06:50 | +04:50 | Ran too low on Pokeballs. | 1511042586
+Reset at Viridian Forest | 0:09:45 | +01:45 | Bad Nidoran - unrunnable special. | 1511042632
+Reset at Koga's Gym | 1:23:44 | +03:44 | Confusion'd. | 1511042800
+Reset at Nidoran grass | 0:07:15 | +05:15 | Ran too low on Pokeballs. | 1511044232
+Reset at Nidoran grass | 0:09:28 | +07:28 | Ran too low on Pokeballs. | 1511044282
+Reset at Nidoran grass | 0:07:35 | +05:35 | Ran too low on Pokeballs. | 1511045169
+Reset at Pallet Town | 0:05:25 | +03:25 | Too many encounters. | 1511045314
+Reset at Mt. Moon | 0:29:20 | +09:50 | Took too long to complete Mt. Moon. | 1511045470
+Reset at Viridian Forest | 0:10:07 | +02:07 | Bad Nidoran - unrunnable attack, unrunnable special. | 1511045730
+Reset at Nidoran grass | 0:08:35 | +06:35 | Took too long to find a suitable Nidoran. | 1511045816

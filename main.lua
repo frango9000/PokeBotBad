@@ -1,15 +1,15 @@
 -- OPTIONS
 
-RESET_FOR_TIME = false -- Set to true if you're trying to break the record, not just finish a run
+RESET_FOR_TIME = true -- Set to true if you're trying to break the record, not just finish a run
 BEAST_MODE = false -- WARNING: Do not engage. Will yolo everything, and reset at every opportunity in the quest for 1:47.
-STREAMING_MODE = false
+STREAMING_MODE = true
 LIVESPLIT = true
 
 
 INITIAL_SPEED = 1500
 AFTER_BROCK_SPEED = 1500
 AFTER_MOON_SPEED = 500
-E4_SPEED = 200
+E4_SPEED = 500
 
 local CUSTOM_SEED  = nil -- Set to a known seed to replay it, or leave nil for random runs
 local NIDORAN_NAME = "A" -- Set this to the single character to name Nidoran (note, to replay a seed, it MUST match!)
