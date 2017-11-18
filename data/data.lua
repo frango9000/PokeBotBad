@@ -110,7 +110,8 @@ function Data.reset(reason, areaName, map, px, py, stats)
 		if not report.frames then
 			Data.setFrames()
 		end
-
+	end
+	if LIVESPLIT then
 		require("util.bridge").report(report)
 	end
 	Data.run = {}

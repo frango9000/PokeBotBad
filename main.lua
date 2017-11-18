@@ -2,6 +2,9 @@
 
 RESET_FOR_TIME = false -- Set to true if you're trying to break the record, not just finish a run
 BEAST_MODE = false -- WARNING: Do not engage. Will yolo everything, and reset at every opportunity in the quest for 1:47.
+STREAMING_MODE = false
+LIVESPLIT = true
+
 
 INITIAL_SPEED = 1500
 AFTER_BROCK_SPEED = 1500
@@ -10,7 +13,7 @@ E4_SPEED = 200
 
 local CUSTOM_SEED  = nil -- Set to a known seed to replay it, or leave nil for random runs
 local NIDORAN_NAME = "A" -- Set this to the single character to name Nidoran (note, to replay a seed, it MUST match!)
-local PAINT_ON     = true -- Display contextual information while the bot runs
+local PAINT_ON     = false -- Display contextual information while the bot runs
 
 -- START CODE (hard hats on)
 
@@ -80,7 +83,6 @@ p("Welcome to PokeBot "..Utils.capitalize(Data.gameName).." v"..VERSION, true)
 
 Control.init()
 Utils.init()
-STREAMING_MODE = true
 
 if CUSTOM_SEED then
 	Strategies.reboot()
@@ -92,18 +94,15 @@ Strategies.init(hasAlreadyStartedPlaying)
 
 if hasAlreadyStartedPlaying and RESET_FOR_TIME then
 	RESET_FOR_TIME = false
-	p("Disabling time-limit resets as the game is already running. Please reset the emulator and restart the script if you'd like to go for a fast time.", true)
+	p("Disabling time-limit resets as the game is already running. Please reset the emulator and restart the script.", true)
 end
 
-if STREAMING_MODE then
+if LIVESPLIT then
 	Bridge.init(Data.gameName)
-else
-	if PAINT_ON then
-		Input.setDebug(true)
-	end
 end
-
-
+if PAINT_ON then
+	Input.setDebug(true)
+end
 
 -- LOOP
 
@@ -183,7 +182,8 @@ while true do
 			Bridge.time(Utils.elapsedTime())
 			oldSeconds = newSeconds
 		end
-	elseif PAINT_ON then
+	end
+	if PAINT_ON then
 		Paint.draw(currentMap)
 	end
 
