@@ -1,3 +1,5 @@
+memory.usememorydomain("WRAM")
+
 local Memory = {}
 
 local Data = require "data.data"
