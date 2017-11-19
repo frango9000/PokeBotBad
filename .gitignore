@@ -2,7 +2,6 @@
 *.gbc
 *.SaveRAM
 *.bak
-*.txt
 *.png
 .idea/workspace.xml
 *.iml
