@@ -39,18 +39,22 @@ end
 -- Wrapper functions
 
 function Bridge.init(gameName)
-	if socket then
-		-- io.popen("java -jar Main.jar")
-		client = socket.connect("localhost", 16834)
-		if client then
-			client:settimeout(0.005)
-			client:setoption("keepalive", true)
-			print("Connected to liveSplit!");
-			send("init,"..gameName)
-			return true
+	if LIVESPLIT then
+		if socket then
+			client = socket.connect("localhost", 16834)
+			if client then
+				client:settimeout(0.005)
+				client:setoption("keepalive", true)
+				print("Connected to liveSplit!");
+				return true
+			else
+				print("Error connecting to liveSplit!");
+			end
 		else
-			print("Error connecting to liveSplit!");
+			print("Socket is Disabled.");
 		end
+	else
+		print("Livesplit is Disabled.");
 	end
 end
 
@@ -147,9 +151,11 @@ end
 
 function Bridge.liveSplit()
 	-- print("Bridge Start Timer")
-	send("initgametime")
-	send("pausegametime")
-	send("starttimer")
+	if LIVESPLIT then
+		send("initgametime")
+		send("pausegametime")
+		send("starttimer")
+	end
 	timeStopped = false
 end
 
@@ -157,7 +163,9 @@ function Bridge.split(finished)
 	if finished then
 		timeStopped = true
 	end
-	send("split")
+	if LIVESPLIT then
+		send("split")
+	end
 	Utils.splitUpdate()
 end
 
@@ -193,7 +201,9 @@ end
 -- RESET
 
 function Bridge.reset()
-	send("reset")
+	if LIVESPLIT
+		send("reset")
+	end
 	timeStopped = false
 end
 
