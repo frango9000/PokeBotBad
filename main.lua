@@ -13,7 +13,7 @@ E4_SPEED = 500
 
 local CUSTOM_SEED  = nil -- Set to a known seed to replay it, or leave nil for random runs
 local NIDORAN_NAME = "A" -- Set this to the single character to name Nidoran (note, to replay a seed, it MUST match!)
-local PAINT_ON     = false -- Display contextual information while the bot runs
+PAINT_ON     = false -- Display contextual information while the bot runs
 
 -- START CODE (hard hats on)
 
