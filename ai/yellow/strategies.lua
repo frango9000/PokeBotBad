@@ -307,10 +307,7 @@ local function depositPikachu()
 			local menuColumn = Menu.getCol()
 			if menuColumn == 5 then
 				if Menu.select(Pokemon.indexOf("pikachu")) then
-					Strategies.chat("pika", Utils.random {
-						" Goodbye, Pikachu BibleThump",
-						" RIP in PC, Pikachu."
-					})
+					Strategies.chat("pika", "Rest in PC, Pikachu.")
 				end
 			elseif menuColumn == 10 then
 				Input.press("A")

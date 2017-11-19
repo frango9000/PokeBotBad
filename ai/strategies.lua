@@ -1249,27 +1249,24 @@ Strategies.functions = {
 		if resetsForStats then
 			local nidoranStatus = nil
 			if att < 15 and spd < 14 and scl < 12 then
-				nidoranStatus = Utils.random {
-					"worst possible stats hype",
-					"unrunnable everything -.- "
-				}
+				nidoranStatus = "Unrunnable everything."
 			else
 				if restrictiveStats and att == 15 and spd == 14 then
-					nidoranStatus = Utils.append(nidoranStatus, "unrunnable attack/speed combination", ", ")
+					nidoranStatus = Utils.append(nidoranStatus, "Unrunnable attack/speed combination", ", ")
 				else
 					if att < 15 then
-						nidoranStatus = Utils.append(nidoranStatus, "unrunnable attack", ", ")
+						nidoranStatus = Utils.append(nidoranStatus, "Unrunnable attack", ", ")
 					end
 					if spd < 14 then
-						nidoranStatus = Utils.append(nidoranStatus, "unrunnable speed", ", ")
+						nidoranStatus = Utils.append(nidoranStatus, "Unrunnable speed", ", ")
 					end
 				end
 				if scl < 12 then
-					nidoranStatus = Utils.append(nidoranStatus, "unrunnable special", ", ")
+					nidoranStatus = Utils.append(nidoranStatus, "Unrunnable special", ", ")
 				end
 			end
 			if not nidoranStatus then
-				nidoranStatus = "unrunnable"
+				nidoranStatus = "Unrunnable"
 			end
 			return Strategies.reset("stats", "Bad Nidoran - "..nidoranStatus)
 		end
@@ -2236,11 +2233,11 @@ Strategies.functions = {
 						print("A screenshot has been saved to the Gameboy\\Screenshots folder in BizHawk.")
 						gui.cleartext()
 						gui.text(0, 0, "PokeBot v"..VERSION)
-						gui.text(0, 7, "Seed: "..Data.run.seed)
-						gui.text(0, 14, "Name: "..Textbox.getNamePlaintext())
-						gui.text(0, 21, "Reset for time: "..tostring(RESET_FOR_TIME))
-						gui.text(0, 28, "Time: "..Utils.elapsedTime())
-						gui.text(0, 35, "Frames: "..Utils.frames())
+						gui.text(0, 14, "Seed: "..Data.run.seed)
+						gui.text(0, 28, "Name: "..Textbox.getNamePlaintext())
+						gui.text(0, 42, "Reset for time: "..tostring(RESET_FOR_TIME))
+						gui.text(0, 56, "Time: "..Utils.elapsedTime())
+						gui.text(0, 70, "Frames: "..Utils.frames())
 						client.setscreenshotosd(true)
 						client.screenshot()
 						client.setscreenshotosd(false)
@@ -2295,7 +2292,9 @@ function Strategies.init(midGame)
 	local nido = Pokemon.inParty("nidoran", "nidorino", "nidoking")
 	if nido then
 		local attDV, defDV, spdDV, sclDV = Pokemon.getDVs(nido)
-		--Bridge.chat("Stats: Att: "..att..", Def: "..def..", Spd: "..spd..", Spc: "..scl..".")
+		if att and def and spd and scl then
+			Bridge.chat("Stats: Att: "..att..", Def: "..def..", Spd: "..spd..", Spc: "..scl..".")
+		end
 		Bridge.chat("DVs: Att: "..attDV..", Def: "..defDV..", Spd: "..spdDV..", Spc: "..sclDV..".")
 		stats.nidoran = {
 			rating = 1,
