@@ -201,7 +201,7 @@ end
 -- RESET
 
 function Bridge.reset()
-	if LIVESPLIT
+	if LIVESPLIT then
 		send("reset")
 	end
 	timeStopped = false
