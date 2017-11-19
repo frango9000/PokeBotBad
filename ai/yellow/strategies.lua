@@ -58,23 +58,23 @@ Strategies.timeRequirements = {
 	end,
 
 	nidoran = function()
-		return 8 + timeForFlier()
+		return 9 + timeForFlier()
 	end,
 
 	forest = function() --YOLO
-		return 13 + timeForFlier() -- + timeForStats(true)
+		return 12 + timeForFlier() -- + timeForStats(true)
 	end,
 
 	brock = function()
-		return 15 + timeForFlier() -- + timeForStats(true)
+		return 14 + timeForFlier() -- + timeForStats(true)
 	end,
 
 	route3 = function()
-		return 19 + timeForFlier() + timeForStats(true)
+		return 18 + timeForFlier() + timeForStats(true)
 	end,
 
 	mt_moon = function()
-		local timeLimit = 28.75 + timeForStats(true)
+		local timeLimit = 29.75 + timeForStats(true)
 		if Pokemon.inParty("paras", "sandshrew") then
 			timeLimit = timeLimit + 0.25
 		end
@@ -93,7 +93,7 @@ Strategies.timeRequirements = {
 	end,
 
 	trash = function() --YOLO
-		return 49.75 + timeForStats()
+		return 50.75 + timeForStats()
 	end,
 
 	fly = function() -- safari_carbos #1

@@ -4,3 +4,7 @@
 *.bak
 *.txt
 *.png
+.idea/workspace.xml
+*.iml
+.idea/modules.xml
+*.xml

@@ -68,11 +68,10 @@ function resetAll()
 	if CUSTOM_SEED then
 		Data.run.seed = CUSTOM_SEED
 		Strategies.replay = true
-		p("RUNNING WITH A FIXED SEED ("..NIDORAN_NAME.." "..Data.run.seed.."), every run will play out identically!", true)
 	else
 		Data.run.seed = os.time()
-		print("PokeBot "..Utils.capitalize(Data.gameName).." v"..VERSION..": "..(BEAST_MODE and "BEAST MODE seed" or "Seed:").." "..Data.run.seed)
 	end
+	print("PokeBot "..Utils.capitalize(Data.gameName).." v"..VERSION.."\n| "..NIDORAN_NAME.." | "..(CUSTOM_SEED and "Custom Seed: " or BEAST_MODE and "BEAST MODE seed: " or "Seed: ")..Data.run.seed)
 	math.randomseed(Data.run.seed)
 end
 
