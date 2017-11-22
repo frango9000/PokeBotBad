@@ -7,3 +7,5 @@
 *.iml
 .idea/modules.xml
 *.xml
+**/TOOLS
+**/TOOLSx
