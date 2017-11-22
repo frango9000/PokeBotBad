@@ -55,16 +55,23 @@ end
 
 function Strategies.hardReset(reason, message, extra, wait)
 	resetting = true
-	if Data.run.seed then
+	local seed = Data.run.seed
+	local newmessage = message.. " | "
+	if seed then
+		newmessage = newmessage..seed
 		if extra then
-			extra = extra.." | "..Data.run.seed
+			extra = extra.." | "..seed
 		else
-			extra = Data.run.seed
+			extra = seed
+		end
+	else
+		newmessage = newmessage.."Seed error..." --debug
+		if extra then
+			extra = extra.." | "
+		else
+			extra = "Seed error + extra.msg error..." --debug
 		end
 	end
-
-	local seed = Data.run.seed
-	local newmessage = message.." | "..seed
 
 	local f, err
 
@@ -107,14 +114,16 @@ end
 function Strategies.reset(reason, explanation, extra, wait)
 	local time = Utils.elapsedTime()
 	local resetMessage = "Reset"
-	resetMessage = resetMessage.." at "..Control.areaName
+	resetMessage = resetMessage.." @ "..splitNumber.." | "..order[splitNumber].." | "..Control.areaName
 	local separator = " | "
+	local splitReq = Strategies.getTimeRequirement(order[splitNumber]) * 60
+	local timeDrift = Utils.frameToTime(Utils.timeToSplit(order[splitNumber]))
 
 	if time then
-		local timeDrift = Utils.frameToTime(Utils.timeToSplit(order[splitNumber]))
-		resetMessage = resetMessage..separator..time..separator..timeDrift
+		resetMessage = resetMessage..separator..time..separator..splitReq..separator..timeDrift..separator..explanation.."."
+	else
+		resetMessage = resetMessage..separator.." [time error] "..separator..timeDrift..separator..explanation.."." -- debug
 	end
-	resetMessage = resetMessage..separator..explanation.."."
 
 	if Strategies.updates.victory and not Control.yolo then
 		Strategies.tweetProgress(Utils.capitalize(resetMessage))
