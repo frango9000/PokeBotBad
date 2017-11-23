@@ -202,14 +202,14 @@ end
 function Utils.splitCheck()
 	if splitCheck == 600 then
 		local timeDiff = Utils.timeToSplit(order[splitNum])
-		local splitReq = Strategies.getTimeRequirement(order[splitNum]) * 60
+		local splitReq = Utils.frameToTime(Strategies.getTimeRequirement(order[splitNum]) * 60)
 		local timeDiffLimit = 900 -- 15 minutes fail-safe reboot
 		if RESET_FOR_TIME then
 			timeDiffLimit = 600 -- 10 minute
 		end
 		if PAINT_ON then
 			if debugTime == 2 then
-				p("~ "..splitNum.." | "..order[splitNum].." | "..Utils.elapsedTime().." | "..Utils.frameToTime(splitReq).." | "..Utils.frameToTime(timeDiff))
+				p("~ "..splitNum.." | "..order[splitNum].." | "..Utils.elapsedTime().." | "..splitReq.." | "..Utils.frameToTime(timeDiff))
 				debugTime = 0
 			else
 				debugTime = debugTime + 1

@@ -114,15 +114,16 @@ end
 function Strategies.reset(reason, explanation, extra, wait)
 	local time = Utils.elapsedTime()
 	local resetMessage = "Reset"
-	resetMessage = resetMessage.." @ "..splitNumber.." | "..order[splitNumber].." | "..Control.areaName
+	resetMessage = resetMessage.." @ "..splitNumber.."+ | "..order[splitNumber].." | "..Control.areaName
 	local separator = " | "
-	local splitReq = Strategies.getTimeRequirement(order[splitNumber]) * 60
+	local timeDiff = Utils.frameToTime(Utils.timeSince(splitTime))
+	local splitReq = Utils.frameToTime(Strategies.getTimeRequirement(order[splitNumber]) * 60)
 	local timeDrift = Utils.frameToTime(Utils.timeToSplit(order[splitNumber]))
 
 	if time then
-		resetMessage = resetMessage..separator..time..separator..splitReq..separator..timeDrift..separator..explanation.."."
+		resetMessage = resetMessage..separator..time..separator..splitReq..separator..timeDiff..separator..timeDrift..separator..explanation.."."
 	else
-		resetMessage = resetMessage..separator.." [time error] "..separator..timeDrift..separator..explanation.."." -- debug
+		resetMessage = resetMessage..separator.." [time error] "..separator..explanation.."." -- debug
 	end
 
 	if Strategies.updates.victory and not Control.yolo then
@@ -720,10 +721,11 @@ Strategies.functions = {
 			splitNumber = splitNumber + 1
 
 			local timeDrift = Utils.frameToTime(Utils.timeToSplit(order[splitNumber]))
+			local splitReq = Utils.frameToTime(Strategies.getTimeRequirement(order[splitNumber]) * 60)
 			local timeDiff
 			splitTime, timeDiff = Utils.timeSince(splitTime)
 			if timeDiff then
-				print("| "..splitNumber.." | "..Control.areaName.." | "..Utils.elapsedTime().." | "..timeDiff.." | "..timeDrift)
+				print("| "..splitNumber.." | "..Control.areaName.." | "..Utils.elapsedTime().." | "..timeDiff.." | "..splitReq.." | "..timeDrift)
 			end
 		end
 		return true
