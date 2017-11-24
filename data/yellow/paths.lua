@@ -50,7 +50,7 @@ local YellowPaths = {
 	-- Pewter City
 	{2, {18,35}, {18,26}, {s="centerViridian"}, {18,22}, {19,22}, {19,13}, {10,13}, {10,18}, {16,18}, {16,17}},
 	-- Brock
-	{54, {4,13}, {c="a",a="Brock's Gym"}, {4,9}, {s="potion",hp=23}, {4,8}, {3,8}, {3,7}, {s="interact",dir="Up"}, {s="swapMove",move="horn_attack",to=0}, {s="fightSandshrew"}, {4,7}, {4,4}, {s="potion",hp=18}, {4,2}, {s="interact",dir="Up"}, {s="fightBrock"}, {s="split"}, {s="tweetBrock"}, {4,14}},
+	{54, {4,13}, {c="a",a="Brock's Gym"}, {4,9}, {s="potion",hp=23}, {4,8}, {3,8}, {3,7}, {s="interact",dir="Up"}, {s="swapMove",move="horn_attack",to=0}, {s="fightSandshrew"}, {4,7}, {4,4}, {s="potion",hp=18}, {4,2}, {s="interact",dir="Up"}, {s="fightBrock"}, {s="split"},{s="speedchange", speed=AFTER_BROCK_SPEED, extra="We have a run going"}, {s="tweetBrock"}, {4,14}},
 
 -- 2: BROCK
 
@@ -79,7 +79,7 @@ local YellowPaths = {
 -- 4: MT. MOON
 
 	-- To Cerulean
-	{15, {24,6}, {s="reportMtMoon"}, {s="split"}, {c="trackEncounters",area=nil}, {24,8}, {35,8}, {35,10}, {61,10}, {61,8}, {79,8}, {79,10}, {90,10}},
+	{15, {24,6}, {s="reportMtMoon"}, {s="split"}, {s="speedchange", speed=AFTER_MOON_SPEED, extra="Things are getting serious"}, {c="trackEncounters",area=nil}, {24,8}, {35,8}, {35,10}, {61,10}, {61,8}, {79,8}, {79,10}, {90,10}},
 	-- Enter Cerulean
 	{3, {0,18}, {c="a",a="Cerulean"}, {8,18}, {s="centerCerulean"}, {8,16}, {8,12}, {9,12}, {9,11}},
 	-- In the house
@@ -426,7 +426,7 @@ local YellowPaths = {
 -- 17: LORELEI
 
 	-- Lorelei
-	{245, {4,5}, {c="a",a="Lorelei"}, {c="potion",b=false}, {4,2}, {s="talk",dir="Right"}, {s="guess",game="elite4",enabled=false}, {s="lorelei"}, {s="split"}, {4,0}},
+	{245, {s="changeSpeed", speed=E4_SPEED, extra="Enjoy the show"}, {4,5}, {c="a",a="Lorelei"}, {c="potion",b=false}, {4,2}, {s="talk",dir="Right"}, {s="guess",game="elite4",enabled=false}, {s="lorelei"}, {s="split"}, {4,0}},
 	-- Bruno
 	{246, {4,5}, {c="a",a="Bruno"}, {s="swap",item="x_special",dest="bicycle",chain=true}, {s="potionBeforeBruno",chain=true}, {s="item",item="elixer",poke="nidoking"}, {4,2}, {s="talk",dir="Right"}, {s="bruno"}, {s="split"}, {4,0}},
 	-- Agatha
