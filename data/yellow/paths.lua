@@ -63,7 +63,7 @@ local YellowPaths = {
 	-- Bypass
 	{14, {0,9}, {11,9}, {11,5}, {18,5}, {18,4}, {22,4}, {22,5}, {24,5}, {s="interact",dir="Down"}, {s="evolveNidorino"}, {27,5}, {27,9}, {s="catchFlierBackup"}, {37,8}, {37,5}, {49,5}, {49,10}, {57,10}, {57,8}, {59,8}, {59,-1}},
 	-- To the Center
-	{15, {9,17}, {12,17}, {12,6}, {s="centerMoon"}, {c="a",a="Mt. Moon"}, {18,6}, {s="split"}, {18,5}},
+	{15, {9,17}, {12,17}, {12,6}, {s="centerMoon"}, {18,6}, {s="split"}, {c="a",a="Mt. Moon"}, {18,5}},
 
 -- 3: ROUTE 3
 

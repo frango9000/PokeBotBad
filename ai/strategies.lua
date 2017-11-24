@@ -725,7 +725,7 @@ Strategies.functions = {
 			local timeDiff
 			splitTime, timeDiff = Utils.timeSince(splitTime)
 			if timeDiff then
-				print("| "..splitNumber.." | "..Control.areaName.." | "..Utils.elapsedTime().." | "..timeDiff.." | "..splitReq.." | "..timeDrift)
+				print("| "..splitNumber.." | "..order[splitNumber].." | "..Control.areaName.." | "..Utils.elapsedTime().." | "..timeDiff.." | "..splitReq.." | "..timeDrift)
 			end
 		end
 		return true
