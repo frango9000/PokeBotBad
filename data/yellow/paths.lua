@@ -50,7 +50,7 @@ local YellowPaths = {
 	-- Pewter City
 	{2, {18,35}, {18,26}, {s="centerViridian"}, {18,22}, {19,22}, {19,13}, {10,13}, {10,18}, {16,18}, {16,17}},
 	-- Brock
-	{54, {4,13}, {c="a",a="Brock's Gym"}, {4,9}, {s="potion",hp=23}, {4,8}, {3,8}, {3,7}, {s="interact",dir="Up"}, {s="swapMove",move="horn_attack",to=0}, {s="fightSandshrew"}, {4,7}, {4,4}, {s="potion",hp=18}, {4,2}, {s="interact",dir="Up"}, {s="fightBrock"}, {s="split"},{s="changeSpeed", speed=AFTER_BROCK_SPEED, extra="We have a run going"}, {s="tweetBrock"}, {4,14}},
+	{54, {4,13}, {c="a",a="Brock's Gym"}, {4,9}, {s="potion",hp=23}, {4,8}, {3,8}, {3,7}, {s="interact",dir="Up"}, {s="swapMove",move="horn_attack",to=0}, {s="fightSandshrew"}, {4,7}, {4,4}, {s="potion",hp=18}, {4,2}, {s="interact",dir="Up"}, {s="fightBrock"}, {s="split"}, {s="changeSpeed", speed=AFTER_BROCK_SPEED, extra="We have a run going"}, {s="tweetBrock"}, {4,14}},
 
 -- 2: BROCK
 
