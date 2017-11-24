@@ -10,8 +10,8 @@ function SeedList.GetNextSeed()
       SEEDINDEX = SEEDINDEX + 1
       return SEEDARRAY[CUSTOMSEED]
     else
-      SEEDINDEX = 1
-      return SeedList.GetNextSeed()
+      SEEDINDEX = 2
+      return SEEDARRAY[1]
     end
   else
     return nil
