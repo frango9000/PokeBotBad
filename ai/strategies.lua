@@ -1095,6 +1095,7 @@ Strategies.functions = {
 			client.speedmode(data.speed)
 			CURRENT_SPEED = data.speed
 		end
+		Utils.saveSeedAndTime(splitNumber, Data.run.seed, Utils.elapsedTime())
 		return true
 	end,
 

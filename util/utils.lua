@@ -255,6 +255,28 @@ function Utils.getNextSeed()
   end
 end
 
+function Utils.saveSplitSeed(split, seed, time)
+  local SPLIT_LOG = SPLIT_LOG..split.."-"..(time and "time" or "seeds")..".txt"
+  local f, err = io.open(SPLIT_LOG, "a")
+  local newmessage = seed
+  if time then
+    newmessage = (time.." | "..newmessage.."\n")
+  else
+    newmessage = (newmessage..", ")
+  end
+  if f==nil then
+    print("Couldn't open file: "..err)
+  else
+    f:write(newmessage)
+    f:close()
+  end
+end
+
+function Utils.saveSeedAndTime(split, seed, time)
+	Utils.saveSplitSeed(split, seed, time)
+	Utils.saveSplitSeed(split, seed)
+end
+
 function Utils.init()
 	Strategies = require("ai."..Data.gameName..".strategies")
 end

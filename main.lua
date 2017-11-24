@@ -28,6 +28,7 @@ Data.init()
 
 RESET_LOG = "./logs/"..Data.gameName.."/resets.txt"
 VICTORY_LOG = "./logs/"..Data.gameName.."/victories.txt"
+SPLIT_LOG = "./logs/"..Data.gameName.."/splits/"
 
 local Battle = require "action.battle"
 local Textbox = require "action.textbox"
