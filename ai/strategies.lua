@@ -58,18 +58,10 @@ function Strategies.hardReset(reason, message, extra, wait)
 	local seed = Data.run.seed
 	local newmessage = message.. " | "
 	if seed then
-		newmessage = newmessage..seed
 		if extra then
-			extra = extra.." | "..seed
+			extra = extra.." | "..Data.run.seed
 		else
-			extra = seed
-		end
-	else
-		newmessage = newmessage.."Seed error..." --debug
-		if extra then
-			extra = extra.." | "
-		else
-			extra = "Seed error + extra.msg error..." --debug
+			extra = Data.run.seed
 		end
 	end
 
@@ -90,7 +82,7 @@ function Strategies.hardReset(reason, message, extra, wait)
 
 	local map, px, py = Memory.value("game", "map"), Player.position()
 	Data.reset(reason, Control.areaName, map, px, py, stats)
-	Bridge.chat(message, false, extra, true)
+	Bridge.chat(message.."\nRELOAD", false, extra, true)
 
 	if Strategies.elite4Reason then
 		Bridge.guessResults("elite4", Strategies.elite4Reason)
@@ -113,17 +105,15 @@ end
 
 function Strategies.reset(reason, explanation, extra, wait)
 	local time = Utils.elapsedTime()
-	local resetMessage = "Reset"
-	resetMessage = resetMessage.." @ "..splitNumber.."+ | "..order[splitNumber].." | "..Control.areaName
-	local separator = " | "
+	local resetMessage ="@ "..splitNumber.."~"..(splitNumber+1).." | "..order[splitNumber].." | "..Control.areaName
 	local timeDiff = Utils.frameToTime(Utils.timeSince(splitTime))
 	local splitReq = Utils.frameToTime(Strategies.getTimeRequirement(order[splitNumber]) * 60)
 	local timeDrift = Utils.frameToTime(Utils.timeToSplit(order[splitNumber]))
 
 	if time then
-		resetMessage = resetMessage..separator..time..separator..splitReq..separator..timeDiff..separator..timeDrift..separator..explanation.."."
+		resetMessage = resetMessage.." | "..time.." | "..splitReq.." | "..timeDiff.." | "..timeDrift.." | "..explanation.."."
 	else
-		resetMessage = resetMessage..separator.." [time error] "..separator..explanation.."." -- debug
+		resetMessage = resetMessage.." | [time error] | "..explanation.."." -- debug
 	end
 
 	if Strategies.updates.victory and not Control.yolo then
