@@ -1,6 +1,5 @@
 local SeedList = {}
 
-SEEDARRAY = {1470739327, 1470741966}
 SEEDINDEX = 1
 
 function SeedList.GetNextSeed()
