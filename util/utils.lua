@@ -9,6 +9,8 @@ local splitCheck = 0
 local splitNum = 1
 local debugTime = 1
 
+SEEDINDEX = 1
+
 -- GLOBAL
 
 function p(...)
@@ -236,6 +238,21 @@ function Utils.frameToTime(frames)
 	local mins = math.floor(frames / 60)
 	timeString = timeString..clockSegment(mins)..":"..clockSegment(secs)
 	return timeString
+end
+
+function Utils.getNextSeed()
+  if #SEEDARRAY > 0 then
+    if SEEDINDEX <= #SEEDARRAY then
+      local CUSTOMSEED = SEEDINDEX
+      SEEDINDEX = SEEDINDEX + 1
+      return SEEDARRAY[CUSTOMSEED]
+    else
+      SEEDINDEX = 2
+      return SEEDARRAY[1]
+    end
+  else
+    return nil
+  end
 end
 
 function Utils.init()

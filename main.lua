@@ -46,8 +46,6 @@ local Paint = require "util.paint"
 local Utils = require "util.utils"
 local Settings = require "util.settings"
 
-local SeedList = require "util.seedList"
-
 local hasAlreadyStartedPlaying = false
 local oldSeconds
 local running = true
@@ -71,12 +69,12 @@ function resetAll()
 
 
 	if CUSTOM_SEED and #SEEDARRAY > 0 then
-		Data.run.seed = SeedList.GetNextSeed()
+		Data.run.seed = Utils.getNextSeed()
 		Strategies.replay = true
 	else
 		Data.run.seed = os.time()
 	end
-	print("PokeBot "..Utils.capitalize(Data.gameName).." v"..VERSION.."\n| "..NIDORAN_NAME.." | "..(CUSTOM_SEED and "Custom Seed "..(SEEDINDEX - 1).."/"..#SEEDARRAY..": " or BEAST_MODE and "BEAST MODE seed: " or "Seed: ")..Data.run.seed)
+	print("PokeBot "..Utils.capitalize(Data.gameName).." v"..VERSION.."\n| "..NIDORAN_NAME.." | "..(CUSTOM_SEED and "Custom Seed "..(SEEDINDEX - 1).."/"..#SEEDARRAY..": " or BEAST_MODE and "BEAST MODE seed: " or "New Seed: ")..Data.run.seed)
 	math.randomseed(Data.run.seed)
 end
 
