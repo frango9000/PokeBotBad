@@ -59,9 +59,9 @@ function Strategies.hardReset(reason, message, extra, wait)
 	local newmessage = message.. " | "
 	if seed then
 		if extra then
-			extra = extra.." | "..Data.run.seed
+			extra = extra.." | "..seed
 		else
-			extra = Data.run.seed
+			extra = seed
 		end
 	end
 
@@ -76,7 +76,7 @@ function Strategies.hardReset(reason, message, extra, wait)
 	if f==nil then
 		print("Couldn't open file: "..err)
 	else
-		f:write(newmessage.."\n")
+		f:write(newmessage..seed.."\n")
 		f:close()
 	end
 
