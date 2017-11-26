@@ -32,17 +32,19 @@ Strategies.warpToCerulean = false
 
 local function timeForStats(level8)
 	local timeBonus = 0
-	if level8 then
-		if stats.nidoran.attack == 16 then
-			timeBonus = timeBonus + 0.25
+	if stats.nidoran then
+		if level8 then
+			if stats.nidoran.attack == 16 then
+				timeBonus = timeBonus + 0.25
+			end
+			if stats.nidoran.speed == 15 then
+				timeBonus = timeBonus + 0.3
+			end
+		else
+			timeBonus = (stats.nidoran.attack - 53) * 0.05
+			local maxSpeed = math.min(stats.nidoran.speed, 52)
+			timeBonus = timeBonus + (maxSpeed - 49) * 0.125
 		end
-		if stats.nidoran.speed == 15 then
-			timeBonus = timeBonus + 0.3
-		end
-	else
-		timeBonus = (stats.nidoran.attack - 53) * 0.05
-		local maxSpeed = math.min(stats.nidoran.speed, 52)
-		timeBonus = timeBonus + (maxSpeed - 49) * 0.125
 	end
 	return timeBonus
 end
@@ -58,19 +60,19 @@ Strategies.timeRequirements = {
 	end,
 
 	nidoran = function()
-		return 9 + timeForFlier()
+		return 8 + timeForFlier()
 	end,
 
 	forest = function() --YOLO
-		return 12 + timeForFlier() -- + timeForStats(true)
+		return 13 + timeForFlier() + timeForStats(true)
 	end,
 
 	brock = function()
-		return 14 + timeForFlier() -- + timeForStats(true)
+		return 15 + timeForFlier() + timeForStats(true)
 	end,
 
 	route3 = function()
-		return 18 + timeForFlier() + timeForStats(true)
+		return 19 + timeForFlier() + timeForStats(true)
 	end,
 
 	mt_moon = function()
@@ -85,7 +87,7 @@ Strategies.timeRequirements = {
 	end,
 
 	mankey = function()
-		return 35.25 + timeForStats()
+		return 34.25 + timeForStats(true)
 	end,
 
 	misty = function() --TWEET

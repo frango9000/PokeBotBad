@@ -714,7 +714,7 @@ Strategies.functions = {
 			--local timeDiff
 			splitTime, timeDiff = Utils.timeSince(splitTime)
 			if timeDiff then
-				Utils.printFilter(nil, "| "..splitNumber..(" | "..order[splitNumber] and DBT or "").." | "..Control.areaName.." | "..Utils.elapsedTime().." | "..timeDiff..(" | "..splitReq.." | "..timeDrift and DBT or ""))
+				Utils.printFilter(nil, "| "..splitNumber..(DBT and " | "..order[splitNumber] or "").." | "..Control.areaName.." | "..Utils.elapsedTime().." | "..timeDiff..(DBT and " | "..splitReq.." | "..timeDrift or ""))
 			end
 		end
 		return true
@@ -1211,7 +1211,7 @@ Strategies.functions = {
 
 	checkNidoranStats = function()
 		local nidx = Pokemon.indexOf("nidoran")
-		if Pokemon.index(nidx, "level") < 8 then
+		if Pokemon.index(nidx, "level") < 4 then
 			return false
 		end
 		if not Data.yellow and status.tries < 300 then
@@ -1237,9 +1237,8 @@ Strategies.functions = {
 			speedDV = spdDV,
 			specialDV = sclDV,
 		}
-		Bridge.stats(att.." "..def.." "..spd.." "..scl)
-		Bridge.chat("Stats: Att: "..att..", Def: "..def..", Spd: "..spd..", Spc: "..scl..".")
-		--Bridge.chat("DVs: Att: "..attDV..", Def: "..defDV..", Spd: "..spdDV..", Spc: "..sclDV..".")
+		Utils.printFilter("info", "Stats: Att: "..att..", Def: "..def..", Spd: "..spd..", Spc: "..scl..".")
+		Utils.printFilter("info", "DVs: Att: "..attDV..", Def: "..defDV..", Spd: "..spdDV..", Spc: "..sclDV..".")
 
 		local resetsForStats = att < 15 or spd < 14 or scl < 12
 		local restrictiveStats = not Data.yellow and RESET_FOR_TIME
