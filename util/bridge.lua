@@ -59,11 +59,8 @@ function Bridge.init(gameName)
 end
 
 function Bridge.tweet(message)
-	if STREAMING_MODE then
-		print("tweet::"..message)
-		--send("tweet", message)
-		return true
-	end
+	Utils.printFilter("tweet", message)
+	return true
 end
 
 function Bridge.pollForName()
@@ -178,8 +175,9 @@ function Bridge.encounter()
 end
 
 function Bridge.report(report)
-	if INTERNAL and not STREAMING_MODE then
-		print(json.encode(report))
+	--if INTERNAL and not STREAMING_MODE then
+	if not STREAMING_MODE then
+		Utils.printFilter("warn", "\n"..json.encode(report))
 	end
 	--send("report", json.encode(report))
 end

@@ -941,7 +941,7 @@ strategyFunctions.shopBuffs = function()
 	local sellArray = {{name="nugget"}}
 	if Inventory.containsAll("pokeball", "potion") then --TODO , "ether"
 		if INTERNAL and Strategies.initialize("pokeball") then
-			print("Selling Pokeballs to make up inventory space")
+			Utils.printFilter("info", "Selling Pokeballs to make up inventory space")
 		end
 		table.insert(sellArray, {name="pokeball"})
 	end

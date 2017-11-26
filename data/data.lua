@@ -31,7 +31,7 @@ function Data.init()
 				gameName = "blue"
 			end
 		elseif not hasNido() then
-			print("ERR: Unable to differentiate Red/Blue version")
+			Utils.printFilter("error", "ERR: Unable to differentiate Red/Blue version")
 			if INTERNAL and not STREAMING_MODE then
 				gameName = "blue"
 			end

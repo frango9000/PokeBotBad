@@ -74,7 +74,7 @@ function Strategies.hardReset(reason, message, extra, wait)
 	end
 
 	if f==nil then
-		print("Couldn't open file: "..err)
+		Utils.printFilter("error", "Couldn't open file: "..err)
 	else
 		f:write(newmessage..seed.."\n")
 		f:close()
@@ -82,7 +82,7 @@ function Strategies.hardReset(reason, message, extra, wait)
 
 	local map, px, py = Memory.value("game", "map"), Player.position()
 	Data.reset(reason, Control.areaName, map, px, py, stats)
-	Bridge.chat(message.."\nRELOAD", false, extra, true)
+	Utils.printFilter(nil, message.." | "..seed.."\nRELOAD")
 
 	if Strategies.elite4Reason then
 		Bridge.guessResults("elite4", Strategies.elite4Reason)
@@ -184,7 +184,7 @@ function Strategies.setYolo(name, forced)
 			else
 				prefix = "dis"
 			end
-			print("YOLO "..prefix.."abled at "..Control.areaName)
+			Utils.printFilter("info", "YOLO "..prefix.."abled at "..Control.areaName)
 		end
 	end
 	return Control.yolo
@@ -202,7 +202,7 @@ function Strategies.tweetProgress(message, progress)
 		Strategies.updates[progress] = true
 		message = message.." Pokemon "..Utils.capitalize(Data.gameName).." bot."
 	end
-	-- Bridge.tweet(message)
+	Bridge.tweet(message)
 	return true
 end
 
@@ -693,7 +693,7 @@ Strategies.functions = {
 			p("FR", Strategies.frames, Utils.frames() - Strategies.startFrames)
 			local repels = Memory.value("player", "repel")
 			if repels > 0 then
-				print("S "..repels)
+				Utils.printFilter("warn", "S "..repels)
 			end
 			Strategies.frames = nil
 		else
@@ -712,10 +712,10 @@ Strategies.functions = {
 
 			local timeDrift = Utils.frameToTime(Utils.timeToSplit(order[splitNumber]))
 			local splitReq = Utils.frameToTime(Strategies.getTimeRequirement(order[splitNumber]) * 60)
-			local timeDiff
+			--local timeDiff
 			splitTime, timeDiff = Utils.timeSince(splitTime)
 			if timeDiff then
-				print("| "..splitNumber.." | "..order[splitNumber].." | "..Control.areaName.." | "..Utils.elapsedTime().." | "..timeDiff.." | "..splitReq.." | "..timeDrift)
+				Utils.printFilter(nil, "| "..splitNumber..(" | "..order[splitNumber] and DBT or "").." | "..Control.areaName.." | "..Utils.elapsedTime().." | "..timeDiff..(" | "..splitReq.." | "..timeDrift and DBT or ""))
 			end
 		end
 		return true
@@ -754,7 +754,7 @@ Strategies.functions = {
 				return Strategies.closeMenuFor(data)
 			end
 			if not status.checked and data.item ~= "carbos" and not Inventory.contains(data.item) then
-				print("No "..data.item.." available!")
+				Utils.printFilter("warn", "No "..data.item.." available!")
 			end
 			status.checked = true
 			return Strategies.useItem(data)
@@ -999,7 +999,7 @@ Strategies.functions = {
 	end,
 
 	wait = function()
-		print("Please save state")
+		Utils.printFilter("warn", "Waiting, Please save state")
 		Input.press("Start", 999999999)
 	end,
 
@@ -1072,7 +1072,7 @@ Strategies.functions = {
 			return Strategies.closeMenuFor(data)
 		end
 		if Strategies.initialize() then
-			print("Elixer: "..data.move.." "..currentPP.." in "..Control.areaName)
+			Utils.printFilter("warn", "Elixer: "..data.move.." "..currentPP.." in "..Control.areaName)
 		end
 
 		data.item = "elixer"
@@ -1081,7 +1081,7 @@ Strategies.functions = {
 
 	changeSpeed = function(data)
 		if CURRENT_SPEED ~= data.speed then
-			print(data.extra..", speed changed to "..data.speed.."%")
+			Utils.printFilter("info", data.extra..", speed changed to "..data.speed.."%")
 			client.speedmode(data.speed)
 			CURRENT_SPEED = data.speed
 		end
@@ -1337,7 +1337,7 @@ Strategies.functions = {
 				Battle.automate()
 			end
 		elseif status.tries > 3600 then
-			print("Broke from Nidorino on tries")
+			Utils.printFilter("warn", "Broke from Nidorino on tries")
 			return true
 		else
 			if status.canProgress then
@@ -2115,7 +2115,7 @@ Strategies.functions = {
 					if Strategies.closeMenuFor(data) then
 						return true
 					end
-					print("No Ether - "..Control.areaName)
+					Utils.printFilter("warn", "No Ether - "..Control.areaName)
 					return false
 				end
 			end
@@ -2228,11 +2228,11 @@ Strategies.functions = {
 				Strategies.tweetProgress(victoryMessage)
 				if Data.run.seed then
 					Data.setFrames()
-					print("v"..VERSION..": "..Data.run.frames.." frames, with seed "..Data.run.seed)
+					Utils.printFilter(nil, "v"..VERSION..": "..Data.run.frames.." frames, with seed "..Data.run.seed)
 
 					if (Data.yellow or not INTERNAL or RESET_FOR_TIME) and not Strategies.replay then
-						print("Please save this seed number to share, if you would like proof of your run!")
-						print("A screenshot has been saved to the Gameboy\\Screenshots folder in BizHawk.")
+						Utils.printFilter("info", "Please save this seed number to share, if you would like proof of your run!")
+						Utils.printFilter("info", "A screenshot has been saved to the Gameboy\\Screenshots folder in BizHawk.")
 						gui.cleartext()
 						gui.text(0, 0, "PokeBot v"..VERSION)
 						gui.text(0, 14, "Seed: "..Data.run.seed)

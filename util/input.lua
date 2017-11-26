@@ -31,7 +31,7 @@ end
 
 function Input.press(button, frames, walk)
 	if setForFrame then
-		print("ERR: Reassigning "..setForFrame.." to "..button)
+		Utils.printFilter("error", "ERR: Reassigning "..setForFrame.." to "..button)
 		return
 	end
 	if frames == nil or frames > 0 then

@@ -17,6 +17,13 @@ PAINT_ON     = false -- Display contextual information while the bot runs
 local CUSTOM_SEED  = true -- Set to true to use seeds from SEEDARRAY, or leave nil for random runs
 SEEDARRAY = {1511530723} -- Insert custom seeds here
 
+ERR = true -- Show error messages on console
+WRN = false -- Show warning messages on console
+INF = false -- Show info messages on console
+TWT = false -- Show tweets on console
+DGB = false -- Show debug split status msg every 10 secs
+DBT = false -- Show extra times on split msgs
+
 -- START CODE (hard hats on)
 
 VERSION = "2.4.9"
@@ -75,7 +82,7 @@ function resetAll()
 	else
 		Data.run.seed = os.time()
 	end
-	print("PokeBot "..Utils.capitalize(Data.gameName).." v"..VERSION.."\n| "..NIDORAN_NAME.." | "..(CUSTOM_SEED and "Custom Seed "..(SEEDINDEX - 1).."/"..#SEEDARRAY..": " or BEAST_MODE and "BEAST MODE seed: " or "New Seed: ")..Data.run.seed)
+	Utils.printFilter(nil, "PokeBot "..Utils.capitalize(Data.gameName).." v"..VERSION.."\n| "..NIDORAN_NAME.." | "..(CUSTOM_SEED and "Custom Seed "..(SEEDINDEX - 1).."/"..#SEEDARRAY..": " or BEAST_MODE and "BEAST MODE seed: " or "New Seed: ")..Data.run.seed)
 	math.randomseed(Data.run.seed)
 end
 

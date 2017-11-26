@@ -27,7 +27,7 @@ function p(...)
 			end
 		end
 	end
-	print(string)
+	Utils.printFilter("info", string)
 end
 
 -- GENERAL
@@ -209,9 +209,9 @@ function Utils.splitCheck()
 		if RESET_FOR_TIME then
 			timeDiffLimit = 600 -- 10 minute
 		end
-		if PAINT_ON then
-			if debugTime == 2 then
-				p("~ "..splitNum.." | "..order[splitNum].." | "..Utils.elapsedTime().." | "..splitReq.." | "..Utils.frameToTime(timeDiff))
+		if DBG then
+			if debugTime == 2 then -- every 20 secs
+				printFilter("debug", " | "..(splitnum-1).."~"..splitNum.." | "..order[splitNum].." | "..Utils.elapsedTime().." | "..splitReq.." | "..Utils.frameToTime(timeDiff))
 				debugTime = 0
 			else
 				debugTime = debugTime + 1
@@ -265,7 +265,7 @@ function Utils.saveSplitSeed(split, seed, time)
     newmessage = (newmessage..", ")
   end
   if f==nil then
-    print("Couldn't open file: "..err)
+    Utils.printFilter("error", "Couldn't open file: "..err)
   else
     f:write(newmessage)
     f:close()
@@ -275,6 +275,18 @@ end
 function Utils.saveSeedAndTime(split, seed, time)
 	Utils.saveSplitSeed(split, seed, time)
 	Utils.saveSplitSeed(split, seed)
+end
+
+function Utils.printFilter(filter, msg)
+	if msg then
+		if filter == "warn" and WRN or filter == "error" and ERR or filter == "info" and INF or filter == "tweet" and TWT or filter == "debug" and DBG then
+			print(Utils.capitalize(filter)..": "..msg)
+		elseif filter == nil then
+			print(msg)
+		--else
+			--print("Debug "..Utils.capitalize(filter)..": "..msg) --debug
+		end
+	end
 end
 
 function Utils.init()
