@@ -106,14 +106,13 @@ end
 function Strategies.reset(reason, explanation, extra, wait)
 	local time = Utils.elapsedTime()
 	local resetMessage ="@ "..splitNumber.."~"..(splitNumber+1).." | "..order[splitNumber].." | "..Control.areaName
-	local timeDiff = Utils.frameToTime(Utils.timeSince(splitTime))
 	local splitReq = Utils.frameToTime(Strategies.getTimeRequirement(order[splitNumber]) * 60)
 	local timeDrift = Utils.frameToTime(Utils.timeToSplit(order[splitNumber]))
 
 	if time then
-		resetMessage = resetMessage.." | "..time.." | "..splitReq.." | "..timeDiff.." | "..timeDrift.." | "..explanation.."."
+		resetMessage = resetMessage.." | "..explanation.." | "..time..(DBT and " | "..splitReq.." | "..timeDrift or "")
 	else
-		resetMessage = resetMessage.." | [time error] | "..explanation.."." -- debug
+		resetMessage = resetMessage.." | "..explanation.." | [time error]" -- debug
 	end
 
 	if Strategies.updates.victory and not Control.yolo then
