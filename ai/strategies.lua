@@ -106,8 +106,8 @@ end
 function Strategies.reset(reason, explanation, extra, wait)
 	local time = Utils.elapsedTime()
 	local resetMessage ="@ "..splitNumber.."~"..(splitNumber+1).." | "..order[splitNumber].." | "..Control.areaName
-	local splitReq = Utils.frameToTime(Strategies.getTimeRequirement(order[splitNumber]) * 60)
-	local timeDrift = Utils.frameToTime(Utils.timeToSplit(order[splitNumber]))
+	local splitReq = Utils.frameToTime(Strategies.getTimeRequirement(order[splitNumber+1]) * 60)
+	local timeDrift = Utils.frameToTime(Utils.timeToSplit(order[splitNumber+1]))
 
 	if time then
 		resetMessage = resetMessage.." | "..explanation.." | "..time..(DBT and " | "..splitReq.." | "..timeDrift or "")
