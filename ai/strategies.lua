@@ -88,7 +88,7 @@ function Strategies.hardReset(reason, message, extra, wait)
 
 	local map, px, py = Memory.value("game", "map"), Player.position()
 	Data.reset(reason, Control.areaName, map, px, py, stats)
-	Utils.printFilter(nil, message.." | "..seed.."\nRELOAD")
+	Utils.printFilter(nil, message.." | "..seed.."\nRELOAD\n")
 
 	if Strategies.elite4Reason then
 		Bridge.guessResults("elite4", Strategies.elite4Reason)
