@@ -68,7 +68,13 @@ function Strategies.hardReset(reason, message, extra, wait)
 	local f, err
 
 	if reason ~= "won" then
-		f, err = io.open(RESET_LOG, "a")
+		local resetLog
+		if splitNumber <= EARLY_RESET_SPLIT_LIMIT then
+			resetLog = EARLY_RESET_LOG
+		else
+			resetLog = RESET_LOG
+		end
+		f, err = io.open(resetLog, "a")
 	else
 		f, err = io.open(VICTORY_LOG, "a")
 	end

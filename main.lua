@@ -33,6 +33,8 @@ local Data = require "data.data"
 
 Data.init()
 
+EARLY_RESET_LOG = "./logs/"..Data.gameName.."/earlyresets.txt"
+EARLY_RESET_SPLIT_LIMIT = 4 --MtMoon
 RESET_LOG = "./logs/"..Data.gameName.."/resets.txt"
 VICTORY_LOG = "./logs/"..Data.gameName.."/victories.txt"
 SPLIT_LOG = "./logs/"..Data.gameName.."/splits/"
