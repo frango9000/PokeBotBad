@@ -16,6 +16,7 @@ PAINT_ON     = false -- Display contextual information while the bot runs
 
 local CUSTOM_SEED  = true -- Set to true to use seeds from SEEDARRAY, or leave nil for random runs
 SEEDARRAY = {1511530723} -- Insert custom seeds here
+LOOP_SEEDS = false
 
 ERR = true -- Show error messages on console
 WRN = false -- Show warning messages on console

@@ -101,6 +101,10 @@ function Strategies.hardReset(reason, message, extra, wait)
 		p("", true)
 	end
 
+	if CUSTOM_SEED and ((SEEDINDEX - 1) == #SEEDARRAY) and not LOOP_SEEDS then
+		Utils.printFilter(nil, (SEEDINDEX - 1).."/"..#SEEDARRAY.." Custom Seeds Finished.\n\n\n")
+		do return end --TO DO BREAK SCRIPT HERE
+	end
 	if wait and INTERNAL and not STREAMING_MODE then
 		strategyFunctions.wait()
 	else
@@ -2232,7 +2236,7 @@ Strategies.functions = {
 				Strategies.tweetProgress(victoryMessage)
 				if Data.run.seed then
 					Data.setFrames()
-					Utils.printFilter(nil, "v"..VERSION..": "..Data.run.frames.." frames, with seed "..Data.run.seed)
+					Utils.printFilter("info", "v"..VERSION..": "..Data.run.frames.." frames, with seed "..Data.run.seed)
 
 					if (Data.yellow or not INTERNAL or RESET_FOR_TIME) and not Strategies.replay then
 						Utils.printFilter("info", "Please save this seed number to share, if you would like proof of your run!")
